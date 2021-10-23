@@ -25,3 +25,16 @@ summary {
         background-image: none;
     }
 }
+
+a {
+    color: #527d9a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #527d9a;
+}
+
+a:visited {
+    color: purple;
+}
