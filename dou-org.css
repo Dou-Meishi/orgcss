@@ -2,7 +2,7 @@ blockquote {
     border-top: 3px solide #ccc;
 }
 
-not(pre) > code {
+:not(pre) > code {
     color: #d33682;
     border: #fdf6e3;
 }
