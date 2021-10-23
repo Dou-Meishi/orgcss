@@ -1,5 +1,5 @@
 blockquote {
-    border-top: 3px solide #ccc;
+    border-top: 3px solid #ccc;
 }
 
 :not(pre) > code {
@@ -20,21 +20,6 @@ summary {
     cursor: pointer;
 }
 
-@media all {
-    html {
-        background-image: none;
-    }
-}
-
-a {
-    color: #527d9a;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #527d9a;
-}
-
-a:visited {
-    color: purple;
+pre {
+    background-color: transparent;
 }
