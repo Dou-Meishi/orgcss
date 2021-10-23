@@ -1,0 +1,27 @@
+blockquote {
+    border-top: 3px solide #ccc;
+}
+
+not(pre) > code {
+    color: #d33682;
+    border: #fdf6e3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+blockquote.proof {
+    border: solid #ccc;
+    border-width: 0 0 3px 3px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+@media all {
+    html {
+        background-image: none;
+    }
+}
