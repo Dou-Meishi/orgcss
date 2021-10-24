@@ -16,10 +16,20 @@ blockquote.proof {
     border-width: 0 0 3px 3px;
 }
 
+pre {
+    background-color: transparent;
+}
+
+details {
+    border: 1px solid gray;
+    border-radius: 0.2em;
+    padding: 0em 2em;
+}
+
 summary {
     cursor: pointer;
 }
 
-pre {
-    background-color: transparent;
+summary > p {
+    margin-top: 0.5em;
 }
