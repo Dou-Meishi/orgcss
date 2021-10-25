@@ -21,9 +21,9 @@ pre {
 }
 
 details {
-    border: 1px solid gray;
+    border: 0px solid gray;
     border-radius: 0.2em;
-    padding: 0em 2em;
+    padding: 0em;
 }
 
 summary {
@@ -31,5 +31,9 @@ summary {
 }
 
 summary > p {
-    margin-top: 0.5em;
+    margin-top: 1.0em;
+}
+
+details[open] summary .expand-icon {
+    visibility: hidden;
 }
