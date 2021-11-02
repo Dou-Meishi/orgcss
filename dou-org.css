@@ -37,3 +37,10 @@ summary > p {
 details[open] summary .expand-icon {
     visibility: hidden;
 }
+
+@media screen {
+    body {
+        width: auto;
+        margin: 0px;
+    }
+}

@@ -63,7 +63,8 @@
 	position: fixed;
 	right: 0.5em;
 	margin-top: 70px;
-	font-family:sans-serif;
+	font-family: sans-serif;
+    font-size: 90%;
     }
 
     /* TOC inspired by http://jashkenas.github.com/coffee-script */
