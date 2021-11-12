@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2021-11-11 周四 23:47 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunless Sea - Captain II</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Dou Meishi">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="http://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="https://dou-meishi.github.io/orgcss/worg.css"/>
+<link rel="stylesheet" type="text/css" href="https://dou-meishi.github.io/orgcss/dou-org.css"/>
+<style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;0,700;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,500;1,500&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital@0;1&display=swap');</style>
+<style>body {font-family: Merriweather, "PT Serif" , lora, serif;}</style>
+<style>i {font-family: "Libre Baskerville", Merriweather, "PT Serif" , lora, serif;}</style>
+<style>nav a {font-family: Helvetica, sans-serif;}</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="./Captain I.html"> UP </a>
+ |
+ <a accesskey="H" href="./stories.html"> HOME </a>
+</div><div id="content">
+<header>
+<h1 class="title">Sunless Sea - Captain II</h1>
+</header><nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org89fb4f3">Captain's Making</a>
+<ul>
+<li><a href="#org22f01cd">Who Were You</a></li>
+<li><a href="#org79e29f3">Choose An Ambition</a></li>
+<li><a href="#orgc694713">A Last Scrap of Paperwork</a></li>
+</ul>
+</li>
+<li><a href="#org443bee4">Fallen London</a>
+<ul>
+<li><a href="#org3ddfab1">The Admiralty Survey Office</a></li>
+<li><a href="#orga8303e9">A Passenger</a></li>
+<li><a href="#org2cafb76">Your Comatose Ferret</a></li>
+<li><a href="#orgbe23f5d">Your Blemmigan Gallivanter</a></li>
+<li><a href="#orgbe89864">Speak to the Longshanks Gunner</a></li>
+<li><a href="#orgc166aab">Shops</a></li>
+</ul>
+</li>
+<li><a href="#org13c308e">Light-Ship</a></li>
+<li><a href="#orgfccccb5">Pigmote Isle</a>
+<ul>
+<li><a href="#orgef0dd6c">On A Lonely Desert Beach</a></li>
+<li><a href="#org80df072">A Literary Interlude</a></li>
+</ul>
+</li>
+<li><a href="#org8bedf07">Sailing Logbook</a></li>
+</ul>
+</div>
+</nav>
+
+<div id="outline-container-org89fb4f3" class="outline-2">
+<h2 id="org89fb4f3">Captain's Making</h2>
+<div class="outline-text-2" id="text-org89fb4f3">
+<p>
+Three decades ago, in the region of Victoria, London was stolen by <i>bats</i>. Now it lies a mile below <i>the surface</i>.
+</p>
+
+<p>
+It was dreadfully inconvenient for everyone. But it opened a vast black ocean to you. Welcome to <i>the Underzee</i>.
+</p>
+
+<ul class="org-ul">
+<li><code>Choose a Past</code></li>
+</ul>
+
+<p>
+You now lodge in a Rome above <i>the Blind Helmsman</i>.
+</p>
+</div>
+
+<div id="outline-container-org22f01cd" class="outline-3">
+<h3 id="org22f01cd">Who Were You</h3>
+<div class="outline-text-3" id="text-org22f01cd">
+<p>
+Now you're a captain: now you belong to the Underzee. But who were you, before?
+</p>
+
+<ul class="org-ul">
+<li><code>A street urchin!</code></li>
+</ul>
+
+<p>
+Your urchin-gang cast you out when you grew too tall. You took to sea rather than graduate to larger crimes. That last big score was enough to buy a ship.
+</p>
+
+<p>
+<b>Low cunning on the high seas</b>
+</p>
+
+<p>
+Your friend, another longshanks, knows a little of gunnery. Only a little, but she can help.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org79e29f3" class="outline-3">
+<h3 id="org79e29f3">Choose An Ambition</h3>
+<div class="outline-text-3" id="text-org79e29f3">
+<p>
+What does winning mean to you?
+</p>
+
+<ul class="org-ul">
+<li><code>Wealth</code></li>
+</ul>
+
+<p>
+You know how it is to be poor. Now you want a mansion, servants, fine clothes. A family, perhaps.
+</p>
+
+<p>
+The Underzee is full of riches. Death and darkness, too, but it's worth the gamble.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc694713" class="outline-3">
+<h3 id="orgc694713">A Last Scrap of Paperwork</h3>
+<div class="outline-text-3" id="text-orgc694713">
+<p>
+Captain! Captain! An irregularity in the Harbourmaster's office! They wish to know - what term of address you prefer ashore?
+</p>
+
+<ul class="org-ul">
+<li><code>Captain</code></li>
+</ul>
+
+<p>
+'Captain' will do perfactly ashore as well as at sea. Thank you.
+</p>
+
+<p>
+<b>Captain it is!</b>
+</p>
+
+<div class="org-center">
+<p>
+<i>A last piece of advice: explore. Take chances. This captain will probably die. The zee is hungry. But each captain passes on lessons to the next&#x2026;</i>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org443bee4" class="outline-2">
+<h2 id="org443bee4">Fallen London</h2>
+<div class="outline-text-2" id="text-org443bee4">
+<p>
+FALLEN LONDON! Deep, dark and marvellous. All voyages start here: and this is where successful voyages end.
+</p>
+
+<ul class="org-ul">
+<li><code>Advice For Captains</code></li>
+</ul>
+
+<p>
+The much-lamented M. Demeaux found a watery grave long, long ago. Probably you will end no better. But if you read this book of invaluable advice, your chances will improve.
+</p>
+
+<ul class="org-ul">
+<li><code>Sell this Book</code></li>
+</ul>
+
+<p>
+You are a vertern captain, and require no more advice? Very well, then.
+</p>
+
+<p>
+<b>Sold!</b>
+</p>
+
+<p>
+Someone else will better appreciate M. Demeaux's work.
+</p>
+
+<ul class="org-ul">
+<li><code>A Zubmarinar Tutorial</code></li>
+</ul>
+
+<p>
+Welcome, delicious friend!
+</p>
+
+<ul class="org-ul">
+<li><code>How to accquire a zubmarine</code></li>
+</ul>
+
+<p>
+Her Majesty's Admiralty has sworn off zubmarine exploration. However, you've heard tales of unofficial research into zubmarine travel being conducted in her distant colony.
+</p>
+
+<div class="org-center">
+<p>
+<i>Travel to the Southern coast, and follow it east to find Port Carnelian. There, you will learn how to convert your ship into a zubmarine. Be sure you're prepared for the journey!</i>
+</p>
+</div>
+
+<ul class="org-ul">
+<li><code>Your Lodgings</code></li>
+</ul>
+
+<p>
+Here you may catch up with your correspondence, rest or retire altogether from the sea-faring life. The better your lodgins, the better your quality of retirement. Naturally.
+</p>
+
+<ul class="org-ul">
+<li><code>Read the Morning Papers</code></li>
+</ul>
+
+<p>
+The unexpurgated Gazette, the Magazine Formally Known as London Magazine, the Spiteful Trumpeter. News.
+</p>
+
+<p>
+<b>News from home</b>
+</p>
+
+<p>
+<i>The Echo Bazaar</i>, that enigmatic marketplace, has increased its tax on love stories. <i>The Traitor Empress</i> has forbidden singing in the street outside her palace. The anarchists of <i>the Calendar Council</i> has inexplicably dynamited a drinking-fountain. <i>The Ministry of Public Decency</i> has located and destroyed a nest of gallblighter wasps&#x2026;  
+</p>
+
+<ul class="org-ul">
+<li><code>London!</code></li>
+</ul>
+
+<p>
+She is the greaties city on the Underzee. And don't you forget it.
+</p>
+
+<ul class="org-ul">
+<li><code>Adopt a Blemmigan Gallivanter</code></li>
+</ul>
+
+<p>
+A Blemmigan sits atop a splintered crate, clinking and whistling at captains as they come near.
+</p>
+
+<p>
+<b>A poliet bow</b>
+</p>
+
+<p>
+You extend your hand and the Blemmigan leaps on. Its tendrils entwine with your fingers, and it chitters quietly. It meets your gaze and bobs its dome in greeting. It's very small - is it old enough for naval services? You're pretty sure its moustache has been drawn on in pen, in an attempt to look older. As you approach your ship's gangplank, the creature flutes and vibrates with apparent happiness. The bosun winces as you bring it aboard.
+</p>
+
+<ul class="org-ul">
+<li><code>Visit the Admiralty's Survey Office</code></li>
+</ul>
+
+<p>
+They'll pay for information from zee-captains. Find out what, and how.
+</p>
+</div>
+
+<div id="outline-container-org3ddfab1" class="outline-3">
+<h3 id="org3ddfab1">The Admiralty Survey Office</h3>
+<div class="outline-text-3" id="text-org3ddfab1">
+<p>
+The Admiralty's picket fleets and intelligence networks are long gone. The Survey Office pays zee-captains a small sum for recent information.
+</p>
+
+<ul class="org-ul">
+<li><code>Ask if there's anything in particular they need</code></li>
+</ul>
+
+<p>
+"Well, if we can be assured of your discretion - "
+</p>
+
+<p>
+<b>"This port - "</b>
+</p>
+
+<p>
+"Speak to our agents there, and return. We'll see that you're rewarded."
+</p>
+
+<ul class="org-ul">
+<li><code>Ask to speak to a higher authority</code></li>
+</ul>
+
+<p>
+"Do you have an appointment?"
+</p>
+
+<p>
+<b>Not as such&#x2026;</b>
+</p>
+
+<p>
+"Once you've proven yourself, perhaps."
+</p>
+
+<ul class="org-ul">
+<li><code>Leave the Admiralty</code></li>
+</ul>
+
+<p>
+"You don't have anything else for us?"
+</p>
+
+<p>
+<b>Done</b>
+</p>
+
+<p>
+Out into the foggy street. Turn your collar up.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga8303e9" class="outline-3">
+<h3 id="orga8303e9">A Passenger</h3>
+<div class="outline-text-3" id="text-orga8303e9">
+<p>
+Someone in the docks wants to board your ship.
+</p>
+
+<ul class="org-ul">
+<li><code>Agree to carry the Anxious University Student to Hunter's Keep</code></li>
+</ul>
+
+<p>
+He has no money, so other captains have no interest. But he's passionate youth, and promises that his studies on lorn-flukes will be rewarding enough.
+</p>
+
+<p>
+<b>Welcom aboard</b>
+</p>
+
+<p>
+He jumps for joy as you agree to take him aboard. "Thank you, thank you! Please, take me to <i>Hunter's Keep</i> right away. A lorn-fluke - a full, dead lorn-fluke! - washed ashore. I'm doing my thesis on them - do you know they can diggest human memory? - and I may never have a better chance to study one up close.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2cafb76" class="outline-3">
+<h3 id="org2cafb76">Your Comatose Ferret</h3>
+<div class="outline-text-3" id="text-org2cafb76">
+<ul class="org-ul">
+<li><code>Comatose Ferret (Mascot)</code></li>
+</ul>
+
+<p>
+Mostly, it's immobile. Occasionally, it's feral.
+</p>
+
+<p>
+It lies across the deck like a lumpy scarf.
+</p>
+
+<ul class="org-ul">
+<li><code>Play with your Ferret</code></li>
+</ul>
+
+<p>
+Attract its attention.
+</p>
+
+<p>
+<b>A weary roll of the eye</b>
+</p>
+
+<p>
+Play, that eye-roll says. Play. I played once, in the happy warrens of London, before you installed me in this floating coffin and made me eat dried food. Damn your play. It is an eloquent eye-roll.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbe23f5d" class="outline-3">
+<h3 id="orgbe23f5d">Your Blemmigan Gallivanter</h3>
+<div class="outline-text-3" id="text-orgbe23f5d">
+<p>
+It has made its home on a shelf in your cabin. It has built a nest from loose journal pages, the engineer's scarf and a possibily pilfered map.
+</p>
+
+<ul class="org-ul">
+<li><code>Entertain your Blemmigan</code></li>
+</ul>
+
+<p>
+You can see the indentation of a porthole on the rim of its cap. It must have been pressing its face to the windows again. Is it bored?
+</p>
+
+<p>
+<b>A ticklish thing</b>
+</p>
+
+<p>
+The Blemmigan flails and squirms as you tickle it. Its high-pitched warble is almost certainly giggling. When you stop - to check that you're not actually hurting it - it warps its tendrils around your fingers and pulls your hand back. Apparently it is enjoying itself. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbe89864" class="outline-3">
+<h3 id="orgbe89864">Speak to the Longshanks Gunner</h3>
+<div class="outline-text-3" id="text-orgbe89864">
+<p>
+"Orright, Captain. What do yer want me to shoot at now?"
+</p>
+
+<ul class="org-ul">
+<li><code>Ask what she wants from life</code></li>
+</ul>
+
+<p>
+Why did she come to zee?
+</p>
+
+<p>
+<b>"Khan's Shadow"</b>
+</p>
+
+<p>
+"It's like the Flit at zee, right? No one to tell yer what to say or do. And no one to kick yer downstairs just 'cos yer got a little bit tall. I'll be a faithful officer, but put me ashore at the Shadow, and I won't forget yer."
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc166aab" class="outline-3">
+<h3 id="orgc166aab">Shops</h3>
+<div class="outline-text-3" id="text-orgc166aab">
+<p>
+Cargoes, treasures, weapons, secrets. Mischief.
+</p>
+
+<ul class="org-ul">
+<li><p>
+<b>Mrs. Plenty's Shipside Privisioners</b>
+</p>
+
+<p>
+A profitable sideline for the notorious carnival entrepreneuse.
+</p>
+
+<ul class="org-ul">
+<li>Solacefruit
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €50</code></li>
+</ul></li>
+
+<li>Fuel
+
+<ul class="org-ul">
+<li><code>Buy: €10, Sell: €2</code></li>
+</ul></li>
+
+<li>Flare
+
+<ul class="org-ul">
+<li><code>Buy: €10, Sell: €0</code></li>
+</ul></li>
+
+<li>Supplies
+
+<ul class="org-ul">
+<li><code>Buy: €20, Sell: €5</code></li>
+</ul></li>
+
+<li>Foxfire Candles
+
+<ul class="org-ul">
+<li><code>Buy: €40, Sell: €20</code></li>
+</ul></li>
+</ul></li>
+
+<li><p>
+<b>WolfStack Exchange</b>
+</p>
+
+<p>
+Trading in common goods will only earn slim profits. Seek other opportunities.
+</p>
+
+<ul class="org-ul">
+<li>Scintillack
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €70</code></li>
+</ul></li>
+
+<li>Devilbone Dice
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €20</code></li>
+</ul></li>
+
+<li>Mutersalt
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €50</code></li>
+</ul></li>
+
+<li>Zzoup
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €70</code></li>
+</ul></li>
+
+<li>Solacefruit
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €50</code></li>
+</ul></li>
+
+<li>A Casket of Sapphires
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €90</code></li>
+</ul></li>
+
+<li>Stygian Ivory
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €28</code></li>
+</ul></li>
+
+<li>Royal-blue Feather
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €1</code></li>
+</ul></li>
+
+<li>Approved Romantic Literature
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €22</code></li>
+</ul></li>
+
+<li>Cask of Mushroom Wine
+
+<ul class="org-ul">
+<li><code>Buy: €21, Sell: €20</code></li>
+</ul></li>
+
+<li>Firkin of Prisoner's Honey
+
+<ul class="org-ul">
+<li><code>Buy: €25, Sell: €20</code></li>
+</ul></li>
+
+<li>Sack of Darkdrop Coffee Beans
+
+<ul class="org-ul">
+<li><code>Buy: €50, Sell: €44</code></li>
+</ul></li>
+
+<li>Crate of Human Souls
+
+<ul class="org-ul">
+<li><code>Buy: €63, Sell: €60</code></li>
+</ul></li>
+
+<li>Bolts of Spider-Silk
+
+<ul class="org-ul">
+<li><code>Buy: €100, Sell: €50</code></li>
+</ul></li>
+
+<li>Bale of Parabola-Linen
+
+<ul class="org-ul">
+<li><code>Buy: €120, Sell: €60</code></li>
+</ul></li>
+</ul></li>
+
+<li><p>
+<b>Carrow's Naval Surplus</b>
+</p>
+
+<p>
+Mr. Carrow has found a use for the equipment once sold to the sadly reduced Royal Navy.
+</p>
+
+<ul class="org-ul">
+<li>Torpedo Components
+
+<ul class="org-ul">
+<li><code>Buy: €5, Sell: €1</code></li>
+</ul></li>
+
+<li>Leadbeater &amp; Stainrod Reconditioned Frigate-Surplus Deck-Gun Mark II
+
+<ul class="org-ul">
+<li><code>Buy: €50, Sell: €10</code></li>
+</ul></li>
+
+<li>Torpedo Nets
+
+<ul class="org-ul">
+<li><code>Buy: €100, Sell: €10</code></li>
+</ul></li>
+
+<li>Leadbeater &amp; Stainrod 'Seaworm'
+
+<ul class="org-ul">
+<li><code>Buy: €100, Sell: €50</code></li>
+</ul></li>
+
+<li>Cotterell &amp; Hathersage 'Reproach'
+
+<ul class="org-ul">
+<li><code>Buy: €200, Sell: €100</code></li>
+</ul></li>
+
+<li>Leadbeater &amp; Stainrod 'Britomart' Flensing-Cannon
+
+<ul class="org-ul">
+<li><code>Buy: €200, Sell: €100</code></li>
+</ul></li>
+
+<li>Leadbeater &amp; Stainrod 'Winnower'
+
+<ul class="org-ul">
+<li><code>Buy: €300, Sell: €150</code></li>
+</ul></li>
+
+<li>Leadbeater &amp; Stainrod 'Scorpion'
+
+<ul class="org-ul">
+<li><code>Buy: €300, Sell: €150</code></li>
+</ul></li>
+
+<li>Cotterell &amp; Hathersage 'Majesty'
+
+<ul class="org-ul">
+<li><code>Buy: €300, Sell: €150</code></li>
+</ul></li>
+
+<li>Stampshod's 'Calvary' Prong Launcher
+
+<ul class="org-ul">
+<li><code>Buy: €500, Sell: €250</code></li>
+</ul></li>
+
+<li>Cotterell &amp; Hathersage 'Denunciation'
+
+<ul class="org-ul">
+<li><code>Buy: €500, Sell: €250</code></li>
+</ul></li>
+
+<li>Cotterell &amp; Hathersage Pneumatic Dynamite Torpedo-Gun
+
+<ul class="org-ul">
+<li><code>Buy: €600, Sell: €300</code></li>
+</ul></li>
+
+<li>Cotterell &amp; Hathersage 'Discouragement'
+
+<ul class="org-ul">
+<li><code>Buy: €600, Sell: €300</code></li>
+</ul></li>
+</ul></li>
+
+<li><p>
+<b>Caminus Yards</b>
+</p>
+
+<p>
+The dangerously jovial Mr. Fires manufactures the most intimidating, least carefully tested devices.
+</p>
+
+<ul class="org-ul">
+<li>WE ARE CLAY
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €300</code></li>
+</ul></li>
+
+<li>Rattus Faber Assistant
+
+<ul class="org-ul">
+<li><code>Buy: €100, Sell: €0</code></li>
+</ul></li>
+
+<li>Caminus Yards 'Bandersnatch'
+
+<ul class="org-ul">
+<li><code>Buy: €600, Sell: €300</code></li>
+</ul></li>
+
+<li>Caminus Yards Avid Suppressor
+
+<ul class="org-ul">
+<li><code>Buy: €800, Sell: €450</code></li>
+</ul></li>
+
+<li>Caminus Yards Hellthrasher
+
+<ul class="org-ul">
+<li><code>Buy: €900, Sell: €450</code></li>
+</ul></li>
+
+<li>Caminus Yards Heart-Ender
+
+<ul class="org-ul">
+<li><code>Buy: €900, Sell: €450</code></li>
+</ul></li>
+
+<li>Caminus Yards 'D _ nation'
+
+<ul class="org-ul">
+<li><code>Buy: €900, Sell: €450</code></li>
+</ul></li>
+
+<li>Caminus Yards 'Compulsion'
+
+<ul class="org-ul">
+<li><code>Buy: €5000, Sell: €0</code></li>
+</ul></li>
+</ul></li>
+
+<li><p>
+<b>The Iron and Misery Company</b>
+</p>
+
+<p>
+[More powerful engines consume more fuel, but increase speed - essential for large slow ships.]
+</p>
+
+<ul class="org-ul">
+<li>The Serpentine
+
+<ul class="org-ul">
+<li><code>Buy: NaN, Sell: €500</code></li>
+</ul></li>
+
+<li>Elderly Steeple-Engine
+
+<ul class="org-ul">
+<li><code>Buy: €50, Sell: €10</code></li>
+</ul></li>
+
+<li>Leadbeater &amp; Stainrod 'Illyrian'
+
+<ul class="org-ul">
+<li><code>Buy: €500, Sell: €250</code></li>
+</ul></li>
+
+<li>Secure Compartment
+
+<ul class="org-ul">
+<li><code>Buy: €500, Sell: €250</code></li>
+</ul></li>
+
+<li>Leadbeater &amp; Stainrod 'Boadicea'
+
+<ul class="org-ul">
+<li><code>Buy: €1000, Sell: €500</code></li>
+</ul></li>
+
+<li>Cotterell &amp; Hathersage 'Manticore No. 4'
+
+<ul class="org-ul">
+<li><code>Buy: €2000, Sell: €1000</code></li>
+</ul></li>
+
+<li>Cotterell &amp; Hathersage 'Admiralty Special'
+
+<ul class="org-ul">
+<li><code>Buy: €4000, Sell: €2500</code></li>
+</ul></li>
+</ul></li>
+
+<li><p>
+<b>Bultitude's House of Vision</b>
+</p>
+
+<p>
+Bultitude's political convicitions may be suspect, but his ship's lights are reliably excellent.
+</p>
+
+<ul class="org-ul">
+<li>Whithern Optical
+
+<ul class="org-ul">
+<li><code>Buy: €100, Sell: €50</code></li>
+</ul></li>
+
+<li>Soft Glim-Lamp
+
+<ul class="org-ul">
+<li><code>Buy: €500, Sell: €100</code></li>
+</ul></li>
+
+<li>Blazing Glim-Lamp
+
+<ul class="org-ul">
+<li><code>Buy: €1000, Sell: €200</code></li>
+</ul></li>
+
+<li>Montaigne Projector
+
+<ul class="org-ul">
+<li><code>Buy: €4000, Sell: €400</code></li>
+</ul></li>
+
+<li>Speculative Consonator
+
+<ul class="org-ul">
+<li><code>Buy: €4000, Sell: €400</code></li>
+</ul></li>
+
+<li>Judgement Resonator
+
+<ul class="org-ul">
+<li><code>Buy: €6000, Sell: €600</code></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org13c308e" class="outline-2">
+<h2 id="org13c308e">Light-Ship</h2>
+<div class="outline-text-2" id="text-org13c308e">
+<p>
+Far from home.
+</p>
+
+<p>
+Its clear bright beam warms the way. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfccccb5" class="outline-2">
+<h2 id="orgfccccb5">Pigmote Isle</h2>
+<div class="outline-text-2" id="text-orgfccccb5">
+<p>
+Two houses, both alike in dignity.
+</p>
+</div>
+
+<div id="outline-container-orgef0dd6c" class="outline-3">
+<h3 id="orgef0dd6c">On A Lonely Desert Beach</h3>
+<div class="outline-text-3" id="text-orgef0dd6c">
+<p>
+There is no habitation in sight, no market, only an old, rotting dock. A stretch of sand thickens to damp, black earth, from which sprout stunted&#x2026; Palms? Not quite: tall fungal growths with frond-like caps, as if someone has sculpted the idea of a tree from a mushroom.
+</p>
+
+<ul class="org-ul">
+<li><code>Disembark</code></li>
+</ul>
+
+<p>
+See what awaits you.
+</p>
+
+<p>
+<b>War?</b>
+</p>
+
+<p>
+As you step on to the quay, you hear clamour, shouts, and shooting; you can see, off in the distance, smoke rising from beyond the hill, and dots of fire flecking the horizon. Two tiny figures stand a little further down the quay. Unmoving. As if awaiting your approach.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org80df072" class="outline-3">
+<h3 id="org80df072">A Literary Interlude</h3>
+<div class="outline-text-3" id="text-org80df072">
+<p>
+The following is an extract from the popular <i>Diary Of A Zee-Captain: From London To Irem And What We Did There Before We Arrived</i>, washed ashore on Mutton Island, and subsequently serialised in the Unexpurgated Gazette. The author's identity remains unknown.
+</p>
+
+<ul class="org-ul">
+<li><code>The Tale of Pigmote Isle</code></li>
+</ul>
+
+<p>
+In which a delegation is made, a choice is presented, war is declared, a most singular treasure is sought by all, and a new empire is founded with tooth and claw.
+</p>
+
+<p>
+<b>Chapter I: The Delegation</b>
+</p>
+
+<p>
+<i>The figures were rodents! To my left was a Rattus Faber, wearing goggles, a blacksmith's apron, and an assortment of tools; to my right an unusually large guinea pig, wearing helmet and breastplate reminiscent of nothing so much as the High Middle Ages.</i>
+</p>
+
+<p>
+<i>The rat stepped forward first and bowed.</i>
+</p>
+
+<p>
+<i>"Welcome, Captain, to Rat Star Island. I am Edgar, Second Chief Engineer of the Third Rat Brigade. I invite you to avail yourself of food and fuel at our expense; the only cost to you is a choice."</i>
+</p>
+
+<p>
+<i>The rat stepped back; at precisely the same moment, with what appeared to be the ease of long habit, the guinea pig scuttled forward, and made a declamatory chirp.</i>
+</p>
+
+<p>
+<i>"Welcom, Captain, to the Isle of Cavia. I am Lady Augusta Devereaux Swinch of the Blackwater Swinches, Seneschal to our King Gracegnaw, First of His Name. I invite you to avail yourself of food and fuel at our expense; the only cost to you is a choice."</i>
+</p>
+
+<p>
+<i>The two stood at attention, looking at me expectantly.</i>
+</p>
+
+<p>
+<b>Chapter II: Alike In Dignity</b>
+</p>
+
+<p>
+<i>The two remarkable rodents sat&#x2026; squatted&#x2026; both seeking my support. I knew I had to choose carefully.</i>
+</p>
+
+<ul class="org-ul">
+<li><code>I spoke to the Chief-Engineer</code></li>
+</ul>
+
+<p>
+His eyes had a wave-cold glint on them and he wore his scars like jewels.
+</p>
+
+<p>
+<b>A Rat in the Making</b>
+</p>
+
+<p>
+<i>I asked the Chief Engineer to elaborate. He looked at me for a long, measured moment before speaking gruffly.</i>
+</p>
+
+<p>
+<i>"We came to this island to make a home for ourselves from London, its cats and Snuffers, Rat-Skin Suits. We came to live as citizens of our own Republic! We came with our tools, our teeth, our clever hands, and made a beautiful city by the light of the Rat Star that shone bright and blue on Mount Ararat." The Chief Engineer nodded towards the distant hill.</i>
+</p>
+
+<p>
+<i>"One day we braved the depths of the Chickenwoods, and from the top of Mount Ararat we plucked Rat Star to be our light, our beacon. But the Pigs of Cavy saw the light, and they lusted for it; they send armies to rule us and steal our Star! We will not permit them to take what is ours! We will resist to last of our breath! Will you join us to defeating them?"</i>
+</p>
+
+<ul class="org-ul">
+<li><code>I spoke to the Seneschal</code></li>
+</ul>
+
+<p>
+How did an armoured guinea pig manage to look regal?
+</p>
+
+<p>
+<b>A Knight out of Habit</b>
+</p>
+
+<p>
+<i>The Seneschal cleared her throat with a delicacy to rival the Duchess' own before speaking.</i>
+</p>
+
+<p>
+<i>"Gracegnaw the King, our Lord and our Sovereign,</i>
+</p>
+
+<p>
+<i>Full seven months had sojourned on the sea,</i>
+</p>
+
+<p>
+<i>Conquered this land, and won the Southern main,</i>
+</p>
+
+<p>
+<i>Now no fortress against him shall remain,</i>
+</p>
+
+<p>
+<i>No city walls left for him to gain,</i>
+</p>
+
+<p>
+<i>Save the RATS! That squeak behind mountain!</i>
+</p>
+
+<p>
+<i>Unlikely was the Lamb of our deliverance,</i>
+</p>
+
+<p>
+<i>Assured shall be our glories and their fall,</i>
+</p>
+
+<p>
+<i>When Our Lady's Eye resotred to be our hall!"</i>
+</p>
+
+<p>
+<i>The Seneschal composed herself, then added, "We saw truth and beauty by the light of Our Lady's Eye on Mount Cavyat. But the rats, with their guns and chatters and their peasants' politics, stole it from us. We will subjugate them and take it back. They are a rabble, and we will rule them with the steel-shod velvet of our paws. Will you join us?"</i>
+</p>
+
+<ul class="org-ul">
+<li><code>I had heard more than enough</code></li>
+</ul>
+
+<p>
+I was ready to make my choice.
+</p>
+
+<p>
+<i>As you can well imagine. I faced quite a dilemma. Their red eyes started up at me, waiting for my choice.</i>
+</p>
+
+<ul class="org-ul">
+<li><code>I sided with the Chief Engineer</code></li>
+</ul>
+
+<p>
+He seemed grumpy but honest. Also, I knew all too well that rat-made weapons can do.
+</p>
+
+<p>
+<b>A friend to rats</b>
+</p>
+
+<p>
+<i>I extended a finger to the Chief Engineer, who shook it grimly. The Seneschal hissed and chatter her teeth in disgust, but kept her distance.</i>
+</p>
+
+<p>
+<i>"You've made the right choice," said the Chief Engineer. "Let me show you around."</i>
+</p>
+
+<p>
+<b>Chapter III: A Rat In The Making</b>
+</p>
+
+<p>
+<i>The Chief Engineer led me to the northern side of this island, skirting the Chickenwoods. We passed through a number of what can only be termed check-points, as fierce-eyed rats shouldered their derringers and saluted to the Chief Engineer. Soon we come upon a small colony, smaller than some of the infestations I had encountered in London flats: perhaps only fifty Rattus Faber all together, working diligently to fortify their side of the island.</i>
+</p>
+
+<p>
+<i>The first thing I noticed was a brilliant light, beaming out from a stump of Chickenwood about six feet high; it bathed the whole settlement in a clean blue glow, and was almost too bright to look at. By its light, I could see several raised mounds of earth, suggesting shallow tunnels.</i>
+</p>
+
+<p>
+<i>An efficient fishing operation was set up by the water: an albino rat mending nets while others stabbed sharpened sticks into the waves. Further inland was a barracks, where a sergeant barked drills at a small squadron of fighters.</i>
+</p>
+
+<p>
+<i>My arrival drew attention, and several rats paused in their work to look at me curiously.</i>
+</p>
+
+<p>
+<i>"Welcome to Murinia," said the Chief Engineer, voice warm with pride. "It's not much to look at now, but it will be once we've rousted the cavies. Take a stroll around while I summon the war council."</i>
+</p>
+
+<p>
+<i>With that he vanished into one of the mounds and left me to explore.</i>
+</p>
+
+<ul class="org-ul">
+<li><code>I visited the rats' barracks</code></li>
+</ul>
+
+<p>
+The dirll sergeant appeared to be sizing me up. Were the few rats around her really all she had to launch an attack?
+</p>
+
+<p>
+<b>We were fighting impressive odds</b>
+</p>
+
+<p>
+<i>I approached the drill sergeant and went so far as to salute her, which earned me a grunt of satisfaction. The sergeant dismissed her troops and offered me a bit of Chickenwood jerky to gnaw on.</i>
+</p>
+
+<p>
+<i>"There's more of us below ground," she explained, "but not enough. The cavies are bigger and there's more of 'em. We're better with weapons, but haven't got the stuff to make 'em with. Most of us came here as stowaways, brought nothing but food, tools, and the fur on our backs. We can fish, and we nibble the Chickenwoods, but we can't make guns out of trees. The cavies came here with their own steamer, and seem to have endless supplies - We raid 'em, sometimes, but there's so few of us, and we can never hold on to territory gained for long. But that's of no consequence - all we want is to be left in peace to build our Republic. And the Rat Star," she added thoughtfully, after a moment, "Of course, we want that too."</i>
+</p>
+
+<ul class="org-ul">
+<li><code>I took a closer look at the 'Rat Star'</code></li>
+</ul>
+
+<p>
+An excitable-looking rat was peering at it through smoky goggles, twitching her whiskers and making notes on what appeared to be real paper.
+</p>
+
+<p>
+<b>Blue as a sapphire, but endlessly more brilliant.</b>
+</p>
+
+<p>
+<i>"It's not a star, of course, not really, but try explaining that to the others. The Chief Engineer doesn't want me working too hard to convince them - says this is better for morale - but just look at it! Look!"</i>
+</p>
+
+<p>
+<i>She offered me her goggles: I managed to work them over just enough of one of my eyes to see the truth of what she was studying.</i>
+</p>
+
+<p>
+<i>It was scintillack! But unlike any I'd seen before: blue as a sapphire, but more brilliant. Something about the clarity of is colour was tremendously soothing. The Chief Science Officer tittered with pleasure as I handed her goggles back.</i>
+</p>
+
+<p>
+<i>"Those of us who've been to the Cavy side of this island and lived to tell it say that there's plenty of glow there, plenty of bright in the water all round, but nothing like this. We took this from the island's centre, Mount Ararat - only it's not a mountain, of course, any more than this is a star! It's hollow - there's sweet water inside, and coral crawling all up to the walls of it. But nothing that glows, save this. It's ours now and no one can take it from us!"</i>
+</p>
+
+<ul class="org-ul">
+<li><code>I headed down to the beach</code></li>
+</ul>
+
+<p>
+Who ever heard of a rat <i>mending</i> a net?
+</p>
+
+<p>
+<b>Where the green billows played</b>
+</p>
+
+<p>
+<i>An albino rat smiled up at me from his mending work, looking dainty and a little shy.</i>
+</p>
+
+<p>
+<i>"Chicekwood floats, especially when it's dried out and sealed, so we're able to paddle out a bit and cast our nets. We come up with all sort of things: blindfish, crabs, sometimes a chunk of broken tentacle. But the fishing would never be so good without the Rat Star." He beamed. "I think it only draws good fish, and keeps the scary ones at bay. I know the Chief Science Officer doesn't believe it, but I do. That light is our livelihood."</i>
+</p>
+
+<ul class="org-ul">
+<li><code>I finished my exploration</code></li>
+</ul>
+
+<p>
+The bells of the War Council rang. I was summoned.
+</p>
+
+<p>
+<b>Chapter IV: A Vital Enterprise</b>
+</p>
+
+<p>
+<i>The Chief Engineer emerged from underground with a motley assortment of other rats: he introduced them as weapons experts, strategiests, and field commanders.</i>
+</p>
+
+<p>
+<i>"So you're going to help us beat the Cavies," he said, a hard edge to his voice. "But how exactly?"</i>
+</p>
+
+<ul class="org-ul">
+<li><code>I offered my strategic assistance</code></li>
+</ul>
+
+<p>
+We engineered a distraction, that the L.B.s could use to plunder the Cavy's ship and turn the tide in their favour.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8bedf07" class="outline-2">
+<h2 id="org8bedf07">Sailing Logbook</h2>
+<div class="outline-text-2" id="text-org8bedf07">
+<ul class="org-ul">
+<li><i>January 5th, 1888</i>: Discovered The Echo Bazaar!</li>
+<li><i>January 5th, 1888</i>: Discovered Dept. of Menace Eradication!</li>
+<li><i>January 6th, 1888</i>: A zailor is praying.</li>
+<li><i>January 6th, 1888</i>: Discovered Badstevener's Abyss!</li>
+<li><i>January 6th, 1888</i>: Discovered Rowena's Rocks!</li>
+<li><i>January 6th, 1888</i>: Discovered Moody's Light!</li>
+<li><i>January 6th, 1888</i>: Discovered Purewal Point!</li>
+<li><i>January 6th, 1888</i>: Here the wilder airs mingle with the airs near of the near reaches. Demeaux's Gate, named for a navigator lost above. How did his bones come below?</li>
+<li><i>January 6th, 1888</i>: Fed the crew.</li>
+<li><i>January 7th, 1888</i>: An electric shiver to the air. Storm is watching, the zailors would say.</li>
+<li><i>January 7th, 1888</i>: Creeping tendirs of fungus, zee-weed, unnamable flora. We enter <i>the Snares</i>.</li>
+<li><i>January 7th, 1888</i>: Discovered Labyrinth of Eels!</li>
+<li><i>January 7th, 1888</i>: Discovered Crabcake!</li>
+<li><i>January 8th, 1888</i>: Home. Warmly lit windows, company, peace. Thoughts of home come at the strangest times.</li>
+<li><i>January 8th, 1888</i>: Discovered Pigmote Isle!</li>
+<li><i>January 8th, 1888</i>: Fed the crew.</li>
+<li><i>January 8th, 1888</i>: Discovered Saints-Haven.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Last modified: 2021-11-11 周四 23:47</p>
+</div>
+</body>
+</html>

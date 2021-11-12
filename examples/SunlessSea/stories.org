@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+#+TITLE: Sunless Sea - Stories
+#+Author: Dou Meishi
+#+STARTUP: indent
+#+STARTUP: overview
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+
+- [[./Captain I.org][Captain I]]
+- [[./Captain II.org][Captain II]]

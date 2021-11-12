@@ -1,0 +1,655 @@
+# -*- coding: utf-8 -*-
+#+TITLE: Sunless Sea - Captain II
+#+Author: Dou Meishi
+#+STARTUP: indent
+#+STARTUP: overview
+#+HTML_LINK_HOME: ./stories.html
+#+HTML_LINK_UP: ./Captain I.html
+#+HTML_HEAD_EXTRA: <style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;0,700;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,500;1,500&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital@0;1&display=swap');</style>
+#+HTML_HEAD_EXTRA: <style>body {font-family: Merriweather, "PT Serif" , lora, serif;}</style>
+#+HTML_HEAD_EXTRA: <style>i {font-family: "Libre Baskerville", Merriweather, "PT Serif" , lora, serif;}</style>
+#+HTML_HEAD_EXTRA: <style>nav a {font-family: Helvetica, sans-serif;}</style>
+
+* Captain's Making
+
+Three decades ago, in the region of Victoria, London was stolen by /bats/. Now it lies a mile below /the surface/.
+
+It was dreadfully inconvenient for everyone. But it opened a vast black ocean to you. Welcome to /the Underzee/.
+
+- ~Choose a Past~
+
+You now lodge in a Rome above /the Blind Helmsman/.
+
+** Who Were You
+
+Now you're a captain: now you belong to the Underzee. But who were you, before?
+
+- ~A street urchin!~
+
+Your urchin-gang cast you out when you grew too tall. You took to sea rather than graduate to larger crimes. That last big score was enough to buy a ship.
+
+*Low cunning on the high seas*
+
+Your friend, another longshanks, knows a little of gunnery. Only a little, but she can help.
+
+** Choose An Ambition
+
+What does winning mean to you?
+
+- ~Wealth~
+
+You know how it is to be poor. Now you want a mansion, servants, fine clothes. A family, perhaps.
+
+The Underzee is full of riches. Death and darkness, too, but it's worth the gamble.
+
+** A Last Scrap of Paperwork
+
+Captain! Captain! An irregularity in the Harbourmaster's office! They wish to know - what term of address you prefer ashore?
+
+- ~Captain~
+
+'Captain' will do perfactly ashore as well as at sea. Thank you.
+
+*Captain it is!*
+
+#+begin_center
+/A last piece of advice: explore. Take chances. This captain will probably die. The zee is hungry. But each captain passes on lessons to the next.../
+#+end_center
+
+* Fallen London
+
+FALLEN LONDON! Deep, dark and marvellous. All voyages start here: and this is where successful voyages end.
+
+- ~Advice For Captains~
+
+The much-lamented M. Demeaux found a watery grave long, long ago. Probably you will end no better. But if you read this book of invaluable advice, your chances will improve.
+
+- ~Sell this Book~
+
+You are a vertern captain, and require no more advice? Very well, then.
+
+*Sold!*
+
+Someone else will better appreciate M. Demeaux's work.
+
+- ~A Zubmarinar Tutorial~
+
+Welcome, delicious friend!
+
+- ~How to accquire a zubmarine~
+
+Her Majesty's Admiralty has sworn off zubmarine exploration. However, you've heard tales of unofficial research into zubmarine travel being conducted in her distant colony.
+
+#+begin_center
+/Travel to the Southern coast, and follow it east to find Port Carnelian. There, you will learn how to convert your ship into a zubmarine. Be sure you're prepared for the journey!/
+#+end_center
+
+- ~Your Lodgings~
+
+Here you may catch up with your correspondence, rest or retire altogether from the sea-faring life. The better your lodgins, the better your quality of retirement. Naturally.
+
+- ~Read the Morning Papers~
+
+The unexpurgated Gazette, the Magazine Formally Known as London Magazine, the Spiteful Trumpeter. News.
+
+*News from home*
+
+/The Echo Bazaar/, that enigmatic marketplace, has increased its tax on love stories. /The Traitor Empress/ has forbidden singing in the street outside her palace. The anarchists of /the Calendar Council/ has inexplicably dynamited a drinking-fountain. /The Ministry of Public Decency/ has located and destroyed a nest of gallblighter wasps...  
+
+- ~London!~
+
+She is the greaties city on the Underzee. And don't you forget it.
+
+- ~Adopt a Blemmigan Gallivanter~
+
+A Blemmigan sits atop a splintered crate, clinking and whistling at captains as they come near.
+
+*A poliet bow*
+
+You extend your hand and the Blemmigan leaps on. Its tendrils entwine with your fingers, and it chitters quietly. It meets your gaze and bobs its dome in greeting. It's very small - is it old enough for naval services? You're pretty sure its moustache has been drawn on in pen, in an attempt to look older. As you approach your ship's gangplank, the creature flutes and vibrates with apparent happiness. The bosun winces as you bring it aboard.
+
+- ~Visit the Admiralty's Survey Office~
+
+They'll pay for information from zee-captains. Find out what, and how.
+
+** The Admiralty Survey Office
+
+The Admiralty's picket fleets and intelligence networks are long gone. The Survey Office pays zee-captains a small sum for recent information.
+
+- ~Ask if there's anything in particular they need~
+
+"Well, if we can be assured of your discretion - "
+
+*"This port - "*
+
+"Speak to our agents there, and return. We'll see that you're rewarded."
+
+- ~Ask to speak to a higher authority~
+
+"Do you have an appointment?"
+
+*Not as such...*
+
+"Once you've proven yourself, perhaps."
+
+- ~Leave the Admiralty~
+
+"You don't have anything else for us?"
+
+*Done*
+
+Out into the foggy street. Turn your collar up.
+
+** A Passenger
+
+Someone in the docks wants to board your ship.
+
+- ~Agree to carry the Anxious University Student to Hunter's Keep~
+
+He has no money, so other captains have no interest. But he's passionate youth, and promises that his studies on lorn-flukes will be rewarding enough.
+
+*Welcom aboard*
+
+He jumps for joy as you agree to take him aboard. "Thank you, thank you! Please, take me to /Hunter's Keep/ right away. A lorn-fluke - a full, dead lorn-fluke! - washed ashore. I'm doing my thesis on them - do you know they can diggest human memory? - and I may never have a better chance to study one up close.
+
+** Your Comatose Ferret
+
+- ~Comatose Ferret (Mascot)~
+
+Mostly, it's immobile. Occasionally, it's feral.
+
+It lies across the deck like a lumpy scarf.
+
+- ~Play with your Ferret~
+
+Attract its attention.
+
+*A weary roll of the eye*
+
+Play, that eye-roll says. Play. I played once, in the happy warrens of London, before you installed me in this floating coffin and made me eat dried food. Damn your play. It is an eloquent eye-roll.
+
+** Your Blemmigan Gallivanter
+
+It has made its home on a shelf in your cabin. It has built a nest from loose journal pages, the engineer's scarf and a possibily pilfered map.
+
+- ~Entertain your Blemmigan~
+
+You can see the indentation of a porthole on the rim of its cap. It must have been pressing its face to the windows again. Is it bored?
+
+*A ticklish thing*
+
+The Blemmigan flails and squirms as you tickle it. Its high-pitched warble is almost certainly giggling. When you stop - to check that you're not actually hurting it - it warps its tendrils around your fingers and pulls your hand back. Apparently it is enjoying itself. 
+
+** Speak to the Longshanks Gunner
+
+"Orright, Captain. What do yer want me to shoot at now?"
+
+- ~Ask what she wants from life~
+
+Why did she come to zee?
+
+*"Khan's Shadow"*
+
+"It's like the Flit at zee, right? No one to tell yer what to say or do. And no one to kick yer downstairs just 'cos yer got a little bit tall. I'll be a faithful officer, but put me ashore at the Shadow, and I won't forget yer."
+
+** Shops
+
+Cargoes, treasures, weapons, secrets. Mischief.
+
+- *Mrs. Plenty's Shipside Privisioners*
+
+  A profitable sideline for the notorious carnival entrepreneuse.
+
+  - Solacefruit
+
+    - ~Buy: NaN, Sell: €50~
+
+  - Fuel
+    
+    - ~Buy: €10, Sell: €2~
+
+  - Flare
+
+    - ~Buy: €10, Sell: €0~
+
+  - Supplies
+
+    - ~Buy: €20, Sell: €5~
+
+  - Foxfire Candles
+
+    - ~Buy: €40, Sell: €20~
+
+- *WolfStack Exchange*
+
+  Trading in common goods will only earn slim profits. Seek other opportunities.
+
+  - Scintillack
+
+    - ~Buy: NaN, Sell: €70~
+
+  - Devilbone Dice
+
+    - ~Buy: NaN, Sell: €20~
+
+  - Mutersalt
+
+    - ~Buy: NaN, Sell: €50~
+
+  - Zzoup
+
+    - ~Buy: NaN, Sell: €70~
+
+  - Solacefruit
+
+    - ~Buy: NaN, Sell: €50~
+
+  - A Casket of Sapphires
+
+    - ~Buy: NaN, Sell: €90~
+
+  - Stygian Ivory
+
+    - ~Buy: NaN, Sell: €28~
+
+  - Royal-blue Feather
+
+    - ~Buy: NaN, Sell: €1~
+
+  - Approved Romantic Literature
+
+    - ~Buy: NaN, Sell: €22~
+
+  - Cask of Mushroom Wine
+
+    - ~Buy: €21, Sell: €20~
+
+  - Firkin of Prisoner's Honey
+
+    - ~Buy: €25, Sell: €20~
+
+  - Sack of Darkdrop Coffee Beans
+
+    - ~Buy: €50, Sell: €44~
+
+  - Crate of Human Souls
+
+    - ~Buy: €63, Sell: €60~
+
+  - Bolts of Spider-Silk
+
+    - ~Buy: €100, Sell: €50~
+
+  - Bale of Parabola-Linen
+
+    - ~Buy: €120, Sell: €60~
+
+- *Carrow's Naval Surplus*
+
+  Mr. Carrow has found a use for the equipment once sold to the sadly reduced Royal Navy.
+
+  - Torpedo Components
+
+    - ~Buy: €5, Sell: €1~
+
+  - Leadbeater & Stainrod Reconditioned Frigate-Surplus Deck-Gun Mark II
+
+    - ~Buy: €50, Sell: €10~
+
+  - Torpedo Nets
+
+    - ~Buy: €100, Sell: €10~
+
+  - Leadbeater & Stainrod 'Seaworm'
+
+    - ~Buy: €100, Sell: €50~
+
+  - Cotterell & Hathersage 'Reproach'
+
+    - ~Buy: €200, Sell: €100~
+
+  - Leadbeater & Stainrod 'Britomart' Flensing-Cannon
+
+    - ~Buy: €200, Sell: €100~
+
+  - Leadbeater & Stainrod 'Winnower'
+
+    - ~Buy: €300, Sell: €150~
+
+  - Leadbeater & Stainrod 'Scorpion'
+
+    - ~Buy: €300, Sell: €150~
+
+  - Cotterell & Hathersage 'Majesty'
+
+    - ~Buy: €300, Sell: €150~
+
+  - Stampshod's 'Calvary' Prong Launcher
+
+    - ~Buy: €500, Sell: €250~
+
+  - Cotterell & Hathersage 'Denunciation'
+
+    - ~Buy: €500, Sell: €250~
+
+  - Cotterell & Hathersage Pneumatic Dynamite Torpedo-Gun
+
+    - ~Buy: €600, Sell: €300~
+
+  - Cotterell & Hathersage 'Discouragement'
+
+    - ~Buy: €600, Sell: €300~
+
+- *Caminus Yards*
+
+  The dangerously jovial Mr. Fires manufactures the most intimidating, least carefully tested devices.
+
+  - WE ARE CLAY
+
+    - ~Buy: NaN, Sell: €300~
+
+  - Rattus Faber Assistant
+
+    - ~Buy: €100, Sell: €0~
+
+  - Caminus Yards 'Bandersnatch'
+
+    - ~Buy: €600, Sell: €300~
+
+  - Caminus Yards Avid Suppressor
+
+    - ~Buy: €800, Sell: €450~
+
+  - Caminus Yards Hellthrasher
+
+    - ~Buy: €900, Sell: €450~
+
+  - Caminus Yards Heart-Ender
+
+    - ~Buy: €900, Sell: €450~
+
+  - Caminus Yards 'D _ nation'
+
+    - ~Buy: €900, Sell: €450~
+
+  - Caminus Yards 'Compulsion'
+
+    - ~Buy: €5000, Sell: €0~
+
+- *The Iron and Misery Company*
+
+  [More powerful engines consume more fuel, but increase speed - essential for large slow ships.]
+
+  - The Serpentine
+
+    - ~Buy: NaN, Sell: €500~
+
+  - Elderly Steeple-Engine
+
+    - ~Buy: €50, Sell: €10~
+
+  - Leadbeater & Stainrod 'Illyrian'
+
+    - ~Buy: €500, Sell: €250~
+
+  - Secure Compartment
+
+    - ~Buy: €500, Sell: €250~
+
+  - Leadbeater & Stainrod 'Boadicea'
+
+    - ~Buy: €1000, Sell: €500~
+
+  - Cotterell & Hathersage 'Manticore No. 4'
+
+    - ~Buy: €2000, Sell: €1000~
+
+  - Cotterell & Hathersage 'Admiralty Special'
+
+    - ~Buy: €4000, Sell: €2500~
+
+- *Bultitude's House of Vision*
+
+  Bultitude's political convicitions may be suspect, but his ship's lights are reliably excellent.
+
+  - Whithern Optical
+
+    - ~Buy: €100, Sell: €50~
+
+  - Soft Glim-Lamp
+
+    - ~Buy: €500, Sell: €100~
+
+  - Blazing Glim-Lamp
+
+    - ~Buy: €1000, Sell: €200~
+
+  - Montaigne Projector
+
+    - ~Buy: €4000, Sell: €400~
+
+  - Speculative Consonator
+
+    - ~Buy: €4000, Sell: €400~
+
+  - Judgement Resonator
+
+    - ~Buy: €6000, Sell: €600~
+
+* Light-Ship
+
+Far from home.
+
+Its clear bright beam warms the way. 
+
+* Pigmote Isle
+
+Two houses, both alike in dignity.
+
+** On A Lonely Desert Beach 
+
+There is no habitation in sight, no market, only an old, rotting dock. A stretch of sand thickens to damp, black earth, from which sprout stunted... Palms? Not quite: tall fungal growths with frond-like caps, as if someone has sculpted the idea of a tree from a mushroom.
+
+- ~Disembark~
+
+See what awaits you.
+
+*War?*
+
+As you step on to the quay, you hear clamour, shouts, and shooting; you can see, off in the distance, smoke rising from beyond the hill, and dots of fire flecking the horizon. Two tiny figures stand a little further down the quay. Unmoving. As if awaiting your approach.
+
+** A Literary Interlude
+
+The following is an extract from the popular /Diary Of A Zee-Captain: From London To Irem And What We Did There Before We Arrived/, washed ashore on Mutton Island, and subsequently serialised in the Unexpurgated Gazette. The author's identity remains unknown.
+
+- ~The Tale of Pigmote Isle~
+
+In which a delegation is made, a choice is presented, war is declared, a most singular treasure is sought by all, and a new empire is founded with tooth and claw.
+
+*Chapter I: The Delegation*
+
+/The figures were rodents! To my left was a Rattus Faber, wearing goggles, a blacksmith's apron, and an assortment of tools; to my right an unusually large guinea pig, wearing helmet and breastplate reminiscent of nothing so much as the High Middle Ages./
+
+/The rat stepped forward first and bowed./
+
+/"Welcome, Captain, to Rat Star Island. I am Edgar, Second Chief Engineer of the Third Rat Brigade. I invite you to avail yourself of food and fuel at our expense; the only cost to you is a choice."/
+
+/The rat stepped back; at precisely the same moment, with what appeared to be the ease of long habit, the guinea pig scuttled forward, and made a declamatory chirp./
+
+/"Welcom, Captain, to the Isle of Cavia. I am Lady Augusta Devereaux Swinch of the Blackwater Swinches, Seneschal to our King Gracegnaw, First of His Name. I invite you to avail yourself of food and fuel at our expense; the only cost to you is a choice."/
+
+/The two stood at attention, looking at me expectantly./
+
+*Chapter II: Alike In Dignity*
+
+/The two remarkable rodents sat... squatted... both seeking my support. I knew I had to choose carefully./
+
+- ~I spoke to the Chief-Engineer~
+
+His eyes had a wave-cold glint on them and he wore his scars like jewels.
+
+*A Rat in the Making*
+
+/I asked the Chief Engineer to elaborate. He looked at me for a long, measured moment before speaking gruffly./
+
+/"We came to this island to make a home for ourselves from London, its cats and Snuffers, Rat-Skin Suits. We came to live as citizens of our own Republic! We came with our tools, our teeth, our clever hands, and made a beautiful city by the light of the Rat Star that shone bright and blue on Mount Ararat." The Chief Engineer nodded towards the distant hill./
+
+/"One day we braved the depths of the Chickenwoods, and from the top of Mount Ararat we plucked Rat Star to be our light, our beacon. But the Pigs of Cavy saw the light, and they lusted for it; they send armies to rule us and steal our Star! We will not permit them to take what is ours! We will resist to last of our breath! Will you join us to defeating them?"/
+
+- ~I spoke to the Seneschal~
+
+How did an armoured guinea pig manage to look regal?
+
+*A Knight out of Habit*
+
+/The Seneschal cleared her throat with a delicacy to rival the Duchess' own before speaking./
+
+/"Gracegnaw the King, our Lord and our Sovereign,/
+
+/Full seven months had sojourned on the sea,/
+
+/Conquered this land, and won the Southern main,/
+
+/Now no fortress against him shall remain,/
+
+/No city walls left for him to gain,/
+
+/Save the RATS! That squeak behind mountain!/
+
+/Unlikely was the Lamb of our deliverance,/
+
+/Assured shall be our glories and their fall,/
+
+/When Our Lady's Eye resotred to be our hall!"/
+
+/The Seneschal composed herself, then added, "We saw truth and beauty by the light of Our Lady's Eye on Mount Cavyat. But the rats, with their guns and chatters and their peasants' politics, stole it from us. We will subjugate them and take it back. They are a rabble, and we will rule them with the steel-shod velvet of our paws. Will you join us?"/
+
+- ~I had heard more than enough~
+
+I was ready to make my choice.
+
+/As you can well imagine. I faced quite a dilemma. Their red eyes started up at me, waiting for my choice./
+
+- ~I sided with the Chief Engineer~
+
+He seemed grumpy but honest. Also, I knew all too well that rat-made weapons can do.
+
+*A friend to rats*
+
+/I extended a finger to the Chief Engineer, who shook it grimly. The Seneschal hissed and chatter her teeth in disgust, but kept her distance./
+
+/"You've made the right choice," said the Chief Engineer. "Let me show you around."/
+
+*Chapter III: A Rat In The Making*
+
+/The Chief Engineer led me to the northern side of this island, skirting the Chickenwoods. We passed through a number of what can only be termed check-points, as fierce-eyed rats shouldered their derringers and saluted to the Chief Engineer. Soon we come upon a small colony, smaller than some of the infestations I had encountered in London flats: perhaps only fifty Rattus Faber all together, working diligently to fortify their side of the island./
+
+/The first thing I noticed was a brilliant light, beaming out from a stump of Chickenwood about six feet high; it bathed the whole settlement in a clean blue glow, and was almost too bright to look at. By its light, I could see several raised mounds of earth, suggesting shallow tunnels./
+
+/An efficient fishing operation was set up by the water: an albino rat mending nets while others stabbed sharpened sticks into the waves. Further inland was a barracks, where a sergeant barked drills at a small squadron of fighters./
+
+/My arrival drew attention, and several rats paused in their work to look at me curiously./
+
+/"Welcome to Murinia," said the Chief Engineer, voice warm with pride. "It's not much to look at now, but it will be once we've rousted the cavies. Take a stroll around while I summon the war council."/
+
+/With that he vanished into one of the mounds and left me to explore./
+
+- ~I visited the rats' barracks~
+
+The dirll sergeant appeared to be sizing me up. Were the few rats around her really all she had to launch an attack?
+
+*We were fighting impressive odds*
+
+/I approached the drill sergeant and went so far as to salute her, which earned me a grunt of satisfaction. The sergeant dismissed her troops and offered me a bit of Chickenwood jerky to gnaw on./
+
+/"There's more of us below ground," she explained, "but not enough. The cavies are bigger and there's more of 'em. We're better with weapons, but haven't got the stuff to make 'em with. Most of us came here as stowaways, brought nothing but food, tools, and the fur on our backs. We can fish, and we nibble the Chickenwoods, but we can't make guns out of trees. The cavies came here with their own steamer, and seem to have endless supplies - We raid 'em, sometimes, but there's so few of us, and we can never hold on to territory gained for long. But that's of no consequence - all we want is to be left in peace to build our Republic. And the Rat Star," she added thoughtfully, after a moment, "Of course, we want that too."/
+
+- ~I took a closer look at the 'Rat Star'~
+
+An excitable-looking rat was peering at it through smoky goggles, twitching her whiskers and making notes on what appeared to be real paper.
+
+*Blue as a sapphire, but endlessly more brilliant.*
+
+/"It's not a star, of course, not really, but try explaining that to the others. The Chief Engineer doesn't want me working too hard to convince them - says this is better for morale - but just look at it! Look!"/
+
+/She offered me her goggles: I managed to work them over just enough of one of my eyes to see the truth of what she was studying./
+
+/It was scintillack! But unlike any I'd seen before: blue as a sapphire, but more brilliant. Something about the clarity of is colour was tremendously soothing. The Chief Science Officer tittered with pleasure as I handed her goggles back./
+
+/"Those of us who've been to the Cavy side of this island and lived to tell it say that there's plenty of glow there, plenty of bright in the water all round, but nothing like this. We took this from the island's centre, Mount Ararat - only it's not a mountain, of course, any more than this is a star! It's hollow - there's sweet water inside, and coral crawling all up to the walls of it. But nothing that glows, save this. It's ours now and no one can take it from us!"/
+
+- ~I headed down to the beach~
+
+Who ever heard of a rat /mending/ a net?
+
+*Where the green billows played*
+
+/An albino rat smiled up at me from his mending work, looking dainty and a little shy./
+
+/"Chicekwood floats, especially when it's dried out and sealed, so we're able to paddle out a bit and cast our nets. We come up with all sort of things: blindfish, crabs, sometimes a chunk of broken tentacle. But the fishing would never be so good without the Rat Star." He beamed. "I think it only draws good fish, and keeps the scary ones at bay. I know the Chief Science Officer doesn't believe it, but I do. That light is our livelihood."/
+
+- ~I finished my exploration~
+
+The bells of the War Council rang. I was summoned.
+
+*Chapter IV: A Vital Enterprise*
+
+/The Chief Engineer emerged from underground with a motley assortment of other rats: he introduced them as weapons experts, strategiests, and field commanders./
+
+/"So you're going to help us beat the Cavies," he said, a hard edge to his voice. "But how exactly?"/
+
+- ~I offered my strategic assistance~
+
+We engineered a distraction, that the L.B.s could use to plunder the Cavy's ship and turn the tide in their favour.
+
+*A Questing Beast*
+
+/I dressed up one of my zailors in a mess of shabby cloth smeared with prisoner's honey, and instructed him to roll around in the black earth of the island. Soon we had a glorious mud monster to send thrashing trhough the Chicekwoods towards the Cavies./
+
+/The distraction worked perfectly; the Cavies diverted their force towards our makeshift beast, leaving the rats iwth very little opposition as they plundered the grounded ship./
+
+/They returned triumphant - as did my sailor, laughing, having led the Cavies a merry chase. With a few hours the rats' diligence had resulted in a building of a remarkable cache of wepaons with which they successfully routed their enemy./
+
+/The rats, ever egalitarian, shared their spoils in addition to the promised food and fuel./
+
+*Chapter V: A Nation Is Born*
+
+/The house of Cavy had fallen. Murinia was triumphant. All that remained were the celebrations, and the continuation of our vayage. Oh, how we feasted long into the night. Then.../
+
+- ~I invited one of the Rattus Faber to join us~
+
+After all, what's a ship without a few rats?
+
+/The Chief Engineer couldn't leave his colony, but he relayed my quest to his people. The Albino rat I saw mending nets shyly stepped forward./
+
+/"I'm good at fixing things," he said, earnestly, "and I'd like to see more of this world."/
+
+/I waited him to gather up some effects and say goodbye to his family before accompanying him on board./
+
+- ~I interceded on behalf of the cavies~
+
+They were crashed, defeated, and I could see their spirits broken without the light of the Rat Star to guide them. They needed an advocate.
+
+*A grudging concession*
+
+- ~The wide dark zee beckoned~
+
+* Sailing Logbook
+
+- /January 5th, 1888/: Discovered The Echo Bazaar!
+- /January 5th, 1888/: Discovered Dept. of Menace Eradication!
+- /January 6th, 1888/: A zailor is praying.
+- /January 6th, 1888/: Discovered Badstevener's Abyss!
+- /January 6th, 1888/: Discovered Rowena's Rocks!
+- /January 6th, 1888/: Discovered Moody's Light!
+- /January 6th, 1888/: Discovered Purewal Point!
+- /January 6th, 1888/: Here the wilder airs mingle with the airs near of the near reaches. Demeaux's Gate, named for a navigator lost above. How did his bones come below?
+- /January 6th, 1888/: Fed the crew.
+- /January 7th, 1888/: An electric shiver to the air. Storm is watching, the zailors would say.
+- /January 7th, 1888/: Creeping tendirs of fungus, zee-weed, unnamable flora. We enter /the Snares/.
+- /January 7th, 1888/: Discovered Labyrinth of Eels!
+- /January 7th, 1888/: Discovered Crabcake!
+- /January 8th, 1888/: Home. Warmly lit windows, company, peace. Thoughts of home come at the strangest times.
+- /January 8th, 1888/: Discovered Pigmote Isle!
+- /January 8th, 1888/: Fed the crew.
+- /January 8th, 1888/: Discovered Saints-Haven.
