@@ -1,203 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2021-11-11 周四 23:47 -->
+<!-- 2021-11-12 周五 21:38 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sunless Sea - Captain II</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Dou Meishi">
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
-</style>
 <link rel="stylesheet" type="text/css" href="http://gongzhitaao.org/orgcss/org.css"/>
 <link rel="stylesheet" type="text/css" href="https://dou-meishi.github.io/orgcss/worg.css"/>
 <link rel="stylesheet" type="text/css" href="https://dou-meishi.github.io/orgcss/dou-org.css"/>
-<style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;0,700;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,500;1,500&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital@0;1&display=swap');</style>
-<style>body {font-family: Merriweather, "PT Serif" , lora, serif;}</style>
-<style>i {font-family: "Libre Baskerville", Merriweather, "PT Serif" , lora, serif;}</style>
-<style>nav a {font-family: Helvetica, sans-serif;}</style>
+<link rel="stylesheet" type="text/css" href="./ss-stories.css"/>
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
@@ -233,38 +46,38 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org89fb4f3">Captain's Making</a>
+<li><a href="#org1b0a6b2">Captain's Making</a>
 <ul>
-<li><a href="#org22f01cd">Who Were You</a></li>
-<li><a href="#org79e29f3">Choose An Ambition</a></li>
-<li><a href="#orgc694713">A Last Scrap of Paperwork</a></li>
+<li><a href="#orgd753128">Who Were You</a></li>
+<li><a href="#orgd2a6796">Choose An Ambition</a></li>
+<li><a href="#org79a6af0">A Last Scrap of Paperwork</a></li>
 </ul>
 </li>
-<li><a href="#org443bee4">Fallen London</a>
+<li><a href="#org3dd86f2">Fallen London</a>
 <ul>
-<li><a href="#org3ddfab1">The Admiralty Survey Office</a></li>
-<li><a href="#orga8303e9">A Passenger</a></li>
-<li><a href="#org2cafb76">Your Comatose Ferret</a></li>
-<li><a href="#orgbe23f5d">Your Blemmigan Gallivanter</a></li>
-<li><a href="#orgbe89864">Speak to the Longshanks Gunner</a></li>
-<li><a href="#orgc166aab">Shops</a></li>
+<li><a href="#org44e8f70">The Admiralty Survey Office</a></li>
+<li><a href="#org69229d5">A Passenger</a></li>
+<li><a href="#org0806fd6">Your Comatose Ferret</a></li>
+<li><a href="#org1e1493e">Your Blemmigan Gallivanter</a></li>
+<li><a href="#orgda6bb95">Speak to the Longshanks Gunner</a></li>
+<li><a href="#org77247a3">Shops</a></li>
 </ul>
 </li>
-<li><a href="#org13c308e">Light-Ship</a></li>
-<li><a href="#orgfccccb5">Pigmote Isle</a>
+<li><a href="#org67e82a5">Light-Ship</a></li>
+<li><a href="#org6955399">Pigmote Isle</a>
 <ul>
-<li><a href="#orgef0dd6c">On A Lonely Desert Beach</a></li>
-<li><a href="#org80df072">A Literary Interlude</a></li>
+<li><a href="#org6713e83">On A Lonely Desert Beach</a></li>
+<li><a href="#org5b1d676">A Literary Interlude</a></li>
 </ul>
 </li>
-<li><a href="#org8bedf07">Sailing Logbook</a></li>
+<li><a href="#org8060634">Sailing Logbook</a></li>
 </ul>
 </div>
 </nav>
 
-<div id="outline-container-org89fb4f3" class="outline-2">
-<h2 id="org89fb4f3">Captain's Making</h2>
-<div class="outline-text-2" id="text-org89fb4f3">
+<div id="outline-container-org1b0a6b2" class="outline-2">
+<h2 id="org1b0a6b2">Captain's Making</h2>
+<div class="outline-text-2" id="text-org1b0a6b2">
 <p>
 Three decades ago, in the region of Victoria, London was stolen by <i>bats</i>. Now it lies a mile below <i>the surface</i>.
 </p>
@@ -282,9 +95,9 @@ You now lodge in a Rome above <i>the Blind Helmsman</i>.
 </p>
 </div>
 
-<div id="outline-container-org22f01cd" class="outline-3">
-<h3 id="org22f01cd">Who Were You</h3>
-<div class="outline-text-3" id="text-org22f01cd">
+<div id="outline-container-orgd753128" class="outline-3">
+<h3 id="orgd753128">Who Were You</h3>
+<div class="outline-text-3" id="text-orgd753128">
 <p>
 Now you're a captain: now you belong to the Underzee. But who were you, before?
 </p>
@@ -307,9 +120,9 @@ Your friend, another longshanks, knows a little of gunnery. Only a little, but s
 </div>
 </div>
 
-<div id="outline-container-org79e29f3" class="outline-3">
-<h3 id="org79e29f3">Choose An Ambition</h3>
-<div class="outline-text-3" id="text-org79e29f3">
+<div id="outline-container-orgd2a6796" class="outline-3">
+<h3 id="orgd2a6796">Choose An Ambition</h3>
+<div class="outline-text-3" id="text-orgd2a6796">
 <p>
 What does winning mean to you?
 </p>
@@ -328,9 +141,9 @@ The Underzee is full of riches. Death and darkness, too, but it's worth the gamb
 </div>
 </div>
 
-<div id="outline-container-orgc694713" class="outline-3">
-<h3 id="orgc694713">A Last Scrap of Paperwork</h3>
-<div class="outline-text-3" id="text-orgc694713">
+<div id="outline-container-org79a6af0" class="outline-3">
+<h3 id="org79a6af0">A Last Scrap of Paperwork</h3>
+<div class="outline-text-3" id="text-org79a6af0">
 <p>
 Captain! Captain! An irregularity in the Harbourmaster's office! They wish to know - what term of address you prefer ashore?
 </p>
@@ -356,9 +169,9 @@ Captain! Captain! An irregularity in the Harbourmaster's office! They wish to kn
 </div>
 </div>
 
-<div id="outline-container-org443bee4" class="outline-2">
-<h2 id="org443bee4">Fallen London</h2>
-<div class="outline-text-2" id="text-org443bee4">
+<div id="outline-container-org3dd86f2" class="outline-2">
+<h2 id="org3dd86f2">Fallen London</h2>
+<div class="outline-text-2" id="text-org3dd86f2">
 <p>
 FALLEN LONDON! Deep, dark and marvellous. All voyages start here: and this is where successful voyages end.
 </p>
@@ -466,9 +279,9 @@ They'll pay for information from zee-captains. Find out what, and how.
 </p>
 </div>
 
-<div id="outline-container-org3ddfab1" class="outline-3">
-<h3 id="org3ddfab1">The Admiralty Survey Office</h3>
-<div class="outline-text-3" id="text-org3ddfab1">
+<div id="outline-container-org44e8f70" class="outline-3">
+<h3 id="org44e8f70">The Admiralty Survey Office</h3>
+<div class="outline-text-3" id="text-org44e8f70">
 <p>
 The Admiralty's picket fleets and intelligence networks are long gone. The Survey Office pays zee-captains a small sum for recent information.
 </p>
@@ -523,9 +336,9 @@ Out into the foggy street. Turn your collar up.
 </div>
 </div>
 
-<div id="outline-container-orga8303e9" class="outline-3">
-<h3 id="orga8303e9">A Passenger</h3>
-<div class="outline-text-3" id="text-orga8303e9">
+<div id="outline-container-org69229d5" class="outline-3">
+<h3 id="org69229d5">A Passenger</h3>
+<div class="outline-text-3" id="text-org69229d5">
 <p>
 Someone in the docks wants to board your ship.
 </p>
@@ -548,9 +361,9 @@ He jumps for joy as you agree to take him aboard. "Thank you, thank you! Please,
 </div>
 </div>
 
-<div id="outline-container-org2cafb76" class="outline-3">
-<h3 id="org2cafb76">Your Comatose Ferret</h3>
-<div class="outline-text-3" id="text-org2cafb76">
+<div id="outline-container-org0806fd6" class="outline-3">
+<h3 id="org0806fd6">Your Comatose Ferret</h3>
+<div class="outline-text-3" id="text-org0806fd6">
 <ul class="org-ul">
 <li><code>Comatose Ferret (Mascot)</code></li>
 </ul>
@@ -581,9 +394,9 @@ Play, that eye-roll says. Play. I played once, in the happy warrens of London, b
 </div>
 </div>
 
-<div id="outline-container-orgbe23f5d" class="outline-3">
-<h3 id="orgbe23f5d">Your Blemmigan Gallivanter</h3>
-<div class="outline-text-3" id="text-orgbe23f5d">
+<div id="outline-container-org1e1493e" class="outline-3">
+<h3 id="org1e1493e">Your Blemmigan Gallivanter</h3>
+<div class="outline-text-3" id="text-org1e1493e">
 <p>
 It has made its home on a shelf in your cabin. It has built a nest from loose journal pages, the engineer's scarf and a possibily pilfered map.
 </p>
@@ -606,9 +419,9 @@ The Blemmigan flails and squirms as you tickle it. Its high-pitched warble is al
 </div>
 </div>
 
-<div id="outline-container-orgbe89864" class="outline-3">
-<h3 id="orgbe89864">Speak to the Longshanks Gunner</h3>
-<div class="outline-text-3" id="text-orgbe89864">
+<div id="outline-container-orgda6bb95" class="outline-3">
+<h3 id="orgda6bb95">Speak to the Longshanks Gunner</h3>
+<div class="outline-text-3" id="text-orgda6bb95">
 <p>
 "Orright, Captain. What do yer want me to shoot at now?"
 </p>
@@ -631,9 +444,9 @@ Why did she come to zee?
 </div>
 </div>
 
-<div id="outline-container-orgc166aab" class="outline-3">
-<h3 id="orgc166aab">Shops</h3>
-<div class="outline-text-3" id="text-orgc166aab">
+<div id="outline-container-org77247a3" class="outline-3">
+<h3 id="org77247a3">Shops</h3>
+<div class="outline-text-3" id="text-org77247a3">
 <p>
 Cargoes, treasures, weapons, secrets. Mischief.
 </p>
@@ -1027,9 +840,9 @@ Bultitude's political convicitions may be suspect, but his ship's lights are rel
 </div>
 </div>
 
-<div id="outline-container-org13c308e" class="outline-2">
-<h2 id="org13c308e">Light-Ship</h2>
-<div class="outline-text-2" id="text-org13c308e">
+<div id="outline-container-org67e82a5" class="outline-2">
+<h2 id="org67e82a5">Light-Ship</h2>
+<div class="outline-text-2" id="text-org67e82a5">
 <p>
 Far from home.
 </p>
@@ -1040,17 +853,17 @@ Its clear bright beam warms the way.
 </div>
 </div>
 
-<div id="outline-container-orgfccccb5" class="outline-2">
-<h2 id="orgfccccb5">Pigmote Isle</h2>
-<div class="outline-text-2" id="text-orgfccccb5">
+<div id="outline-container-org6955399" class="outline-2">
+<h2 id="org6955399">Pigmote Isle</h2>
+<div class="outline-text-2" id="text-org6955399">
 <p>
 Two houses, both alike in dignity.
 </p>
 </div>
 
-<div id="outline-container-orgef0dd6c" class="outline-3">
-<h3 id="orgef0dd6c">On A Lonely Desert Beach</h3>
-<div class="outline-text-3" id="text-orgef0dd6c">
+<div id="outline-container-org6713e83" class="outline-3">
+<h3 id="org6713e83">On A Lonely Desert Beach</h3>
+<div class="outline-text-3" id="text-org6713e83">
 <p>
 There is no habitation in sight, no market, only an old, rotting dock. A stretch of sand thickens to damp, black earth, from which sprout stunted&#x2026; Palms? Not quite: tall fungal growths with frond-like caps, as if someone has sculpted the idea of a tree from a mushroom.
 </p>
@@ -1073,9 +886,9 @@ As you step on to the quay, you hear clamour, shouts, and shooting; you can see,
 </div>
 </div>
 
-<div id="outline-container-org80df072" class="outline-3">
-<h3 id="org80df072">A Literary Interlude</h3>
-<div class="outline-text-3" id="text-org80df072">
+<div id="outline-container-org5b1d676" class="outline-3">
+<h3 id="org5b1d676">A Literary Interlude</h3>
+<div class="outline-text-3" id="text-org5b1d676">
 <p>
 The following is an extract from the popular <i>Diary Of A Zee-Captain: From London To Irem And What We Did There Before We Arrived</i>, washed ashore on Mutton Island, and subsequently serialised in the Unexpurgated Gazette. The author's identity remains unknown.
 </p>
@@ -1359,13 +1172,77 @@ The bells of the War Council rang. I was summoned.
 <p>
 We engineered a distraction, that the L.B.s could use to plunder the Cavy's ship and turn the tide in their favour.
 </p>
+
+<p>
+<b>A Questing Beast</b>
+</p>
+
+<p>
+<i>I dressed up one of my zailors in a mess of shabby cloth smeared with prisoner's honey, and instructed him to roll around in the black earth of the island. Soon we had a glorious mud monster to send thrashing trhough the Chicekwoods towards the Cavies.</i>
+</p>
+
+<p>
+<i>The distraction worked perfectly; the Cavies diverted their force towards our makeshift beast, leaving the rats iwth very little opposition as they plundered the grounded ship.</i>
+</p>
+
+<p>
+<i>They returned triumphant - as did my sailor, laughing, having led the Cavies a merry chase. With a few hours the rats' diligence had resulted in a building of a remarkable cache of wepaons with which they successfully routed their enemy.</i>
+</p>
+
+<p>
+<i>The rats, ever egalitarian, shared their spoils in addition to the promised food and fuel.</i>
+</p>
+
+<p>
+<b>Chapter V: A Nation Is Born</b>
+</p>
+
+<p>
+<i>The house of Cavy had fallen. Murinia was triumphant. All that remained were the celebrations, and the continuation of our vayage. Oh, how we feasted long into the night. Then&#x2026;</i>
+</p>
+
+<ul class="org-ul">
+<li><code>I invited one of the Rattus Faber to join us</code></li>
+</ul>
+
+<p>
+After all, what's a ship without a few rats?
+</p>
+
+<p>
+<i>The Chief Engineer couldn't leave his colony, but he relayed my quest to his people. The Albino rat I saw mending nets shyly stepped forward.</i>
+</p>
+
+<p>
+<i>"I'm good at fixing things," he said, earnestly, "and I'd like to see more of this world."</i>
+</p>
+
+<p>
+<i>I waited him to gather up some effects and say goodbye to his family before accompanying him on board.</i>
+</p>
+
+<ul class="org-ul">
+<li><code>I interceded on behalf of the cavies</code></li>
+</ul>
+
+<p>
+They were crashed, defeated, and I could see their spirits broken without the light of the Rat Star to guide them. They needed an advocate.
+</p>
+
+<p>
+<b>A grudging concession</b>
+</p>
+
+<ul class="org-ul">
+<li><code>The wide dark zee beckoned</code></li>
+</ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org8bedf07" class="outline-2">
-<h2 id="org8bedf07">Sailing Logbook</h2>
-<div class="outline-text-2" id="text-org8bedf07">
+<div id="outline-container-org8060634" class="outline-2">
+<h2 id="org8060634">Sailing Logbook</h2>
+<div class="outline-text-2" id="text-org8060634">
 <ul class="org-ul">
 <li><i>January 5th, 1888</i>: Discovered The Echo Bazaar!</li>
 <li><i>January 5th, 1888</i>: Discovered Dept. of Menace Eradication!</li>
@@ -1389,7 +1266,7 @@ We engineered a distraction, that the L.B.s could use to plunder the Cavy's ship
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Last modified: 2021-11-11 周四 23:47</p>
+<p class="date">Last modified: 2021-11-12 周五 21:38</p>
 </div>
 </body>
 </html>

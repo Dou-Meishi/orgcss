@@ -5,10 +5,7 @@
 #+STARTUP: overview
 #+HTML_LINK_HOME: ./stories.html
 #+HTML_LINK_UP: ./Captain I.html
-#+HTML_HEAD_EXTRA: <style>@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;0,700;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,500;1,500&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital@0;1&display=swap');</style>
-#+HTML_HEAD_EXTRA: <style>body {font-family: Merriweather, "PT Serif" , lora, serif;}</style>
-#+HTML_HEAD_EXTRA: <style>i {font-family: "Libre Baskerville", Merriweather, "PT Serif" , lora, serif;}</style>
-#+HTML_HEAD_EXTRA: <style>nav a {font-family: Helvetica, sans-serif;}</style>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="./ss-stories.css"/>
 
 * Captain's Making
 

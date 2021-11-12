@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;0,700;1,600;1,700&family=Lato:wght@400;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,500;1,500&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital@0;1&family=Roboto:wght@400;500;900&display=swap');
+
+body {
+    font-family: Merriweather, "PT Serif" , lora, serif;
+}
+
+i {
+    font-family: "Libre Baskerville", Merriweather, "PT Serif" , lora, serif;
+}
+
+h1, h2, h3, h4, h5, h6, nav a {
+    font-family: Lato, Roboto, Helvetica, sans-serif;
+}
+
+h1 {
+    font-variant: small-caps;
+}
