@@ -42,5 +42,6 @@ details[open] summary .expand-icon {
     body {
         width: auto;
         margin: 0px;
+        font-family: sans-serif;
     }
 }
