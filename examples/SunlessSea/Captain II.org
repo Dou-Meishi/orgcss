@@ -631,6 +631,42 @@ They were crashed, defeated, and I could see their spirits broken without the li
 
 - ~The wide dark zee beckoned~
 
+We had eaten our fill and our business was concluded. It was time to continue our vayage and see what wonders and terrors still awaited us.
+
+*THE END*
+
+There. You finished your diary entry, and the final dregs of he rats' surprisingly good wine. They line up to salute you as you leave the victory banquet, and escorting you to your ship through the foundations of the their new Republic.
+
+** The Rise of Pigmote Isle
+
+Hail Murinia! The Neath's most adorable nation scurries around your legs. Scintillack harvesters drag heavy bags of the island's bounty to their silos. Industrious rodents work hard on towering edifices, some of them are almost neck-high. (London will never belive a b _ dy word of this.)
+
+* BATTLE RESULT
+
+** You've Destroyed a Rat-Barge
+
+The ship is yours! What will you do with her?
+
+- ~Loot and sculttle her~
+
+She's a vile old vessel, and these zees aren't safe. Take what you can and move on.
+
+*Lean pickings*
+
+These pinnaces don't sail far from their hidden harbours, but here's something at the back of the hold.
+
+** Opening a Cache of Curiosities
+
+What's inside?
+
+- ~A stout crate~
+
+Crates! The source of sustenance: the fundamental element of cargo.
+
+*A crate of fuel*
+
+Coke! Like coal, but more so, as the Department of Infernal Rarefactions would have it.
+
 * Sailing Logbook
 
 - /January 5th, 1888/: Discovered The Echo Bazaar!
@@ -650,3 +686,17 @@ They were crashed, defeated, and I could see their spirits broken without the li
 - /January 8th, 1888/: Discovered Pigmote Isle!
 - /January 8th, 1888/: Fed the crew.
 - /January 8th, 1888/: Discovered Saints-Haven.
+- /January 8th, 1888/: Discovered a Rat-Barge from The dark Underzee!
+- /January 8th, 1888/: The zee here is warmm. Bubbles rise and burst with lazy menace. The fire in the earth is restless.
+- ~Suffered 10 damage!~
+- /January 10th, 1888/: A zailor is praying.
+- /January 10th, 1888/: Fed the crew.
+- /January 11th, 1888/: Green glass and basalt. Salt and silence.
+- /January 11th, 1888/: Discovered Velten's Vortex!
+- /January 11th, 1888/: The Carnelian Coast. Far to the South, the Neath-roof glimmers above the Mountain of Light.
+- /January 11th, 1888/: Discovered the Rainer's Vortex!
+- /January 12th, 1888/: A false-star flares in the cavern roof directly above you; flares, and fades.
+- /January 12th, 1888/: Discovered Rolias Bluff!
+- /January 12th, 1888/: Fed the crew.
+- /January 12th, 1888/: Discovered Port Carnelian!
+
