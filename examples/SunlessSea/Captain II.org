@@ -15,7 +15,7 @@ It was dreadfully inconvenient for everyone. But it opened a vast black ocean to
 
 - ~Choose a Past~
 
-You now lodge in a Rome above /the Blind Helmsman/.
+You now lodge in a Room above /the Blind Helmsman/.
 
 ** Who Were You
 
@@ -641,7 +641,7 @@ There. You finished your diary entry, and the final dregs of he rats' surprising
 
 Hail Murinia! The Neath's most adorable nation scurries around your legs. Scintillack harvesters drag heavy bags of the island's bounty to their silos. Industrious rodents work hard on towering edifices, some of them are almost neck-high. (London will never belive a b _ dy word of this.)
 
-* BATTLE RESULT
+* BATTLE RESULT I
 
 ** You've Destroyed a Rat-Barge
 
@@ -666,6 +666,230 @@ Crates! The source of sustenance: the fundamental element of cargo.
 *A crate of fuel*
 
 Coke! Like coal, but more so, as the Department of Infernal Rarefactions would have it.
+
+* Port Carnelian
+
+Fallen London's sole Imperial possession. Treasure it.
+
+- ~Port Carnelian~
+
+London's first Underzee colony sweats under a blanket of sourthern heat. To the right of the dock, the sapphire-mines yawn. To the right, the Governor's house stands, prim as an Elderwick's mansion. Behind lies the fungal jungle, ghostly in white and violet.
+
+- ~Call a Heartscroos House~
+
+Where the Governor administers this distant fleck of Her Majesty's empire.
+
+*A port report*
+
+The Governor is very, very busy. An attache offers you a bowl of sugared puffballs, and explains the work the Governor does among these natives. "Got to keep them happy, what? After all, they /are/ tigers."
+
+** Zubmariner: the Fierce Philanthropist
+
+Her house is built in the tall, porticoed London style. Red brick and white plaster. Decorative iron railings, painted black.
+
+Its mistress is the subject of intense colonial gossip: independently wealthy, an industrialist's daughter, a widow, unwelcome in London... What, then, does she want with you? An invitation, arrived as soon as you docked.
+
+- ~Accept her invitation~
+
+It woundn't hurt to have the backing of a wealthy benefactor.
+
+You expected a sizable gather, but it's just you, her, and a decanter of admirable sherry. She is not a small woman, and comprehensively occupies her armchair. Her hair is impeccably curled.
+
+"I've heard a number of shocking things about you, Captain, all of which I consider thoroughly promising." Her accent has a hint of Midlands melancholy to it. She must have spent musch of her life on the Surface.
+
+For a time, she asks questions about your travels and listen avidly to your answers. Then she gets down to business.
+
+** Sherry with the Fierce Philanthropist
+
+"A question, Captain." She tops up her sherry. "Some years ago, the nations of the Neath struck an agreement to abandon their research into zubmarine travels, and leave the zee depths untouched."
+
+Ah, the /Agreement About Noghing of Consequence/. Zailors mutter about it while listing the Admiralty's follies. You nod.
+
+She raises her glass to her lips. "And what is your opnion about this agreement?" She asks.
+
+- ~Scoff about it~
+
+It's a nonsense! Nowhere should be forbidden to a capable explorer!
+
+*A new friend*
+
+Her smile is conspiratorial. "Then we can help each other. I am prepared to finance - in a large part - improvements to your ship that will make it capable of zubmarine travel."
+
+"The Admiralty - ad other powers - disapprove of such innovation. Therefore, we need to be discreet. I have procured experts, labourers, and a workshop. They are well-paid, and loyal. Here is the address. Meet us there, and we will begin our work."
+
+** The Hidden Workshop
+
+On the shore of a gloomy inlet stands a rickety factory. Once - and supposedly still - it was committed to the cutting and polishing of sapphires.
+
+Now it is the place where the Fierce Philanthropist houses her intrepid staff of engineers: the ingenious men and women who will convert your ship into a zubmarine.
+
+- ~Leave the workshop~
+
+Its noise. Its arguments. Its overwhelming smell of oil and peppermints.
+
+*You close the door behind you*
+
+Back to Port Carnelian: the hubbub, the pungent scent of the fungal jungle, the low rumble as tigers pad by on the street.
+
+** Shops
+
+Not just sapphires. Although there are quite a lot of sapphires.
+
+- *Dockside Market*
+
+  The stalls are almost the same as Wolfstack. So are the sounds. The scents are utterly different.
+
+  - Fuel
+    
+    - ~Buy: €12, Sell: €0~
+
+  - Supplies
+
+    - ~Buy: €18, Sell: €0~
+
+  - Solacefruit
+
+    - ~Buy: €250, Sell: €50~
+
+- *Sapphire Exchange*
+
+  Actually, this place is indeed mostly sapphires.
+
+  - Romantic Literature
+    
+    - ~Buy: €0, Sell: €22~
+
+  - Cask of Mushroom Wine
+
+    - ~Buy: €0, Sell: €23~
+
+  - Sack of Darkdrop Coffee Bean
+
+    - ~Buy: €38, Sell: €0~
+
+  - A Casket of Sapphires
+
+    - ~Buy: €86, Sell: €0~
+
+  - Mountain-sherd
+
+    - ~Buy: €2000, Sell: €0~
+
+* Grand Geode
+
+A distant song like a mirage.
+
+A naval base, with the Royal Navy's emblems, cruiously amended. Efficient, bright-eyed men and women work briskly, everywhere you look. They are singing: hymns with unfamiliar words. Hard-faced Royal Marines watch you carefully, barring entry to the Geode's heart.
+
+A plaque by the dock has been defaced with orange paint, but you can still make out the original inscriptions: 'STATION V (ADJUNCT)'.
+
+- ~Compile a Port Report~
+
+Does the Admiralty know? Or want to know?
+
+*Take discreet notes*
+
+THe Marines are watching.
+
+- ~Ask to speak with someone in authority~
+
+What is this place?
+
+*"The Commodore may be able to give you a few minutes -"*
+
+The commodore shakes your hand warmly. He's a handsome, open-faced fellow in an immaculate Navy uniform. His office is equally handsome. It overlooks the glittering interior crystal cliff - it must be as well lit as any study in the Neath. He deflects questions about the purpose of this installation - "classified, you know." - but smilingly offers you tea, biscuits and mineralogical anecdotes.
+
+The biscuits are good, but the anecdotes rather blend one into the next. You find yourself nodding, and then jerk suddenly awake. The Commodore is smiling. Your cup is empty. You fell well, very well. A little euphoric, even. "Come back soon," he says softly.
+
+- ~Engage an Officier: the Carnelian Exile~
+
+A dark-spectacled woman marches up to you, in some haste. "Captain. Take me with you. I am no longer welcome here... and I will show you where we need to go." 
+
+*Welcom aboard!*
+
+"Here I am. A ship, I suppose, is both always here, and never there, because there becomes here."  
+
+* FIRE!
+
+You've pushed your engines too far, too fast! Zailors scream - flames rage -
+
+- ~Heal the wounded, damp the flames~
+
+Do what you can -
+
+*Bandaging the wounded*
+
+You've saved injured zailors. But the ship has suffered terribly -
+
+* BATTLE RESULT II
+
+** You've Destroyed The Unfinished Revolutionaries
+
+Fragements of clay litter acroos the deck. They crunch underfoot like postherds. Unfinished men do not surrender.
+
+- ~Investigate the hold~
+
+What treasure did these villains take?
+
+** Opening A  Cache Of Curiosities 
+
+What's inside?
+
+- ~A stout crate~
+
+Crates! The source of sustenance: the fundamental element of cargo.
+
+*A crate of fuel*
+
+Coke! Like coal, but more so, as the Department of Infernal Rarefactions would have it.
+
+* A White Zee-Bat
+
+A zailor has grown fretful and disobedient, reluctant to go on deck, even in port. "There's a white zee-bat watching me up there. Salt's messenger. Salt's got its eye on me. I'll never see home again."
+
+- ~Salt~
+
+One of the nameless god that zailors fear. This zailor is a conscientious man. Sen him to the sick bay on the pretext of a fever.
+
+*And onwards*
+
+The zailor is grateful, though your ship's doctor rolls a sceptical eye. When he next goes up on deck, the railings are clear of zee-bats, white or black, and he sets to work with a will. 
+
+* Cumaean Canal Staging Area
+
+Here, the dark waters run down from the surface, from a brighter sea... 
+
+The Canal ascends, through locks and gates and shadowed turns, to the sunlight of the Surface.
+
+- ~Gather information for a Port Report~
+
+Many ships pass this way, but perhaps you will pick up something they missed.
+
+*Bussiness as usual*
+
+The gates open and shuts. The locks remain free from sabotage. If anywhere besides London is safe in all the Underzee, it's here. The Surface nations have an interest in keeping the way open.
+
+- ~Listen for Surface gossip~
+
+The ships of Surface linger here: this is their life-line to a warmer place.
+
+*A sorry end*
+
+A card game ends badly when one Surface sailor knifes other for all the usual reasons. The other players scrabble for the coins spill from her pockets, but you snatch up a scrap of paper they overlook. Curious markings: dates, times, code-names. Spy's work?
+
+** Shops
+
+- *Harbour Provisioners*
+
+  A sluggish and hostile merchant squints warily. A few goods of indifferently quality are available.
+
+  - Fuel
+    
+    - ~Buy: €20, Sell: €1~
+
+  - Supplies
+
+    - ~Buy: €30, Sell: €5~
 
 * Sailing Logbook
 
