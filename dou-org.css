@@ -1,5 +1,6 @@
 blockquote {
-    border-top: 3px solid #ccc;
+    border-top: 3px dotted #ccc;
+    border-bottom: 3px dotted #ccc;
 }
 
 :not(pre) > code {
@@ -12,8 +13,9 @@ ul {
 }
 
 blockquote.proof {
-    border: solid #ccc;
-    border-width: 0 0 3px 3px;
+    /* border: solid #ccc; */
+    /* border-width: 0 0 3px 3px; */
+    ;
 }
 
 pre {
