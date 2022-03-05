@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+#+TITLE: Theory of Probability
+#+Author: Dou Meishi
+#+HTML_LINK_HOME: 
+#+HTML_LINK_UP: 
+
+[[https://web.ma.utexas.edu/users/gordanz/lecture_notes_page.html][Gordan Žitković - lecture notes]]
+
+* Measurable Space
+
+Skip.
+
+* Measures
+
+Skip
+
+* The Lebesgue Integral
+
+Skip
+
+* Lebesgue Spaces and Inequalities
+
+[[https://web.ma.utexas.edu/users/gordanz/notes/lp_inequalities.pdf][Source]]: 10 pages.
+
+- [2022-03-05 六] 20:00--21:30
+
+  Key Concepts: pseudo norm, convergence in $\mathcal{L}^1$, essential supremum, convergence in $\mathcal{L}^p$, Young's inequality, Holder's inequality, Cauchy-Schwarz inequality, Minkowski inequality, pseudo-Banach space, Jensen's inequality, Markov's inequality.
