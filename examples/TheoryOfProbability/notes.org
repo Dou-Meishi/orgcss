@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 #+TITLE: Theory of Probability
 #+Author: Dou Meishi
-#+HTML_LINK_HOME: 
-#+HTML_LINK_UP: 
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
 
 [[https://web.ma.utexas.edu/users/gordanz/lecture_notes_page.html][Gordan Žitković - lecture notes]]
 
@@ -25,3 +25,27 @@ Skip
 - [2022-03-05 六] 20:00--21:30
 
   Key Concepts: pseudo norm, convergence in $\mathcal{L}^1$, essential supremum, convergence in $\mathcal{L}^p$, Young's inequality, Holder's inequality, Cauchy-Schwarz inequality, Minkowski inequality, pseudo-Banach space, Jensen's inequality, Markov's inequality.
+
+* Fubini-Tonelli and Radon-Nikodym Theorem
+
+[[https://web.ma.utexas.edu/users/gordanz/notes/fubini_radon.pdf][Source]]: 13 pages.
+
+- [2022-03-08 二] 20:00--21:30
+
+  Key Concepts: Cavalieri's principle, finite products of measure spaces, Fubini-Tonelli theorem, absolute continuity, the Lebesgue decomposition, Radon-Nikodym derivative.
+
+  Cite: [[https://wiki.math.ntnu.no/_media/ma8109/2015h/lebesgue-radon-nikodym.pdf][A simple proof of the Lebesgue decomposition theorem]]
+
+- [2022-03-13 日] 08:00--09:30
+
+  Key Concepts: Hilbert space, continuous dual space, dual norm, Hilbert projection theorem, Riesz representation theorem.
+
+  Cite: [[https://en.wikipedia.org/wiki/Riesz_representation_theorem][Riesz representation theorem - Wikipedia]]
+
+* Basic Probability
+
+[[https://web.ma.utexas.edu/users/gordanz/notes/basic_probability.pdf][Source]]: 17 pages.
+
+- [2022-03-17 四] 20:00--21:30
+
+  Key Concepts: probability space, continuity of probability, random variable, expectation, convergence in probability, distribution function, cumulative distribution function, absolutely continuous random variable, probability density distribution function, independence of random variables, independence of set classes, independence means multiply, uncorrelated random variables.
