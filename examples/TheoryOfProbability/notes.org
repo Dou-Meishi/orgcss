@@ -49,3 +49,51 @@ Skip
 - [2022-03-17 四] 20:00--21:30
 
   Key Concepts: probability space, continuity of probability, random variable, expectation, convergence in probability, distribution function, cumulative distribution function, absolutely continuous random variable, probability density distribution function, independence of random variables, independence of set classes, independence means multiply, uncorrelated random variables.
+
+- [2022-03-19 六] 20:00--21:30
+
+  Key Concepts: distribution, distribution function, probability density distribution function  of sum of random variables, convolution of function, convolution of measure, transform the uniform random variable, the existence of i.i.d random variables.
+
+* Weak Convergence
+
+[[https://web.ma.utexas.edu/users/gordanz/notes/weak.pdf][Source]]: 9 pages.
+
+- [2022-03-22 二] 20:00--21:30
+
+  Key Concepts: weakly converge, converge in distribution, uniqueness of limit for weakly convergence, Portmanteau theorem, \(\mu\)-continuity, pointwise convergence at continuous points is equivalent to weakly convergence
+
+- [2022-03-24 四] 20:00-21:30
+
+  Key Concepts: tight, relatively (sequentially) weakly compact, Prohorov theorem, relation between convergence in probability and convergence in distribution.
+
+* Characteristic Functions
+
+[[https://web.ma.utexas.edu/users/gordanz/notes/characteristic.pdf][Source]]: 9 pages.
+
+- [2022-03-29 二] 9:00--10:30
+
+  Key Concepts: characteristic function of a probability measure, characteristic function of a random variable, basic properties of characteristic function , inversion theorem, equality of characteristic function implies equality of distribution function, integrable of characteristic function implies absolutely continuous
+
+- [2022-03-29 二] 15:00--16:30
+
+  Key Concepts: derivatives of characteristic function, tail probability bounded by characteristic function, characteristic function vanishes at infinity, weakly converges if and only if characteristic function converges pointwise.
+
+* The Weak Law of Large Numbers and Central Limit Theorem
+
+[[https://web.ma.utexas.edu/users/gordanz/notes/wlln_clt.pdf][Source]]: 10 pages.
+
+- [2022-04-07 四] 19:30--21:00
+
+  Key Concepts: weak law of large numbers, central limit theorem
+
+- [2022-04-08 五] 9:30--11:00
+  
+  Key Concepts: Lindeberg-Feller theorem, cycles in a random permutation
+
+* Conditional Expectation
+
+[[https://web.ma.utexas.edu/users/gordanz/notes/conditional_expectation.pdf][Source]]: 17 pages.
+
+- [2022-04-14 四] 20:00--21:30
+
+  Key Concepts:

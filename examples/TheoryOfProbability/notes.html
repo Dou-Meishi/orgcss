@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2022-03-17 四 22:29 -->
+<!-- 2022-04-18 一 14:49 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Theory of Probability</title>
@@ -31,12 +31,16 @@ window.MathJax = {
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf966320">Measurable Space</a></li>
-<li><a href="#orged7d418">Measures</a></li>
-<li><a href="#orgd4fcb55">The Lebesgue Integral</a></li>
-<li><a href="#orgcfd3a54">Lebesgue Spaces and Inequalities</a></li>
-<li><a href="#org64274d2">Fubini-Tonelli and Radon-Nikodym Theorem</a></li>
-<li><a href="#org5c0f0f2">Basic Probability</a></li>
+<li><a href="#org3ce8ca9">Measurable Space</a></li>
+<li><a href="#orgd607b78">Measures</a></li>
+<li><a href="#org3d0c86a">The Lebesgue Integral</a></li>
+<li><a href="#org6c21463">Lebesgue Spaces and Inequalities</a></li>
+<li><a href="#org9e99d43">Fubini-Tonelli and Radon-Nikodym Theorem</a></li>
+<li><a href="#org35b07cf">Basic Probability</a></li>
+<li><a href="#org7de0e5e">Weak Convergence</a></li>
+<li><a href="#org6b1c7a9">Characteristic Functions</a></li>
+<li><a href="#org4741f95">The Weak Law of Large Numbers and Central Limit Theorem</a></li>
+<li><a href="#orgf482eb8">Conditional Expectation</a></li>
 </ul>
 </div>
 </nav>
@@ -44,36 +48,36 @@ window.MathJax = {
 <a href="https://web.ma.utexas.edu/users/gordanz/lecture_notes_page.html">Gordan Žitković - lecture notes</a>
 </p>
 
-<div id="outline-container-orgf966320" class="outline-2">
-<h2 id="orgf966320">Measurable Space</h2>
-<div class="outline-text-2" id="text-orgf966320">
+<div id="outline-container-org3ce8ca9" class="outline-2">
+<h2 id="org3ce8ca9">Measurable Space</h2>
+<div class="outline-text-2" id="text-org3ce8ca9">
 <p>
 Skip.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orged7d418" class="outline-2">
-<h2 id="orged7d418">Measures</h2>
-<div class="outline-text-2" id="text-orged7d418">
+<div id="outline-container-orgd607b78" class="outline-2">
+<h2 id="orgd607b78">Measures</h2>
+<div class="outline-text-2" id="text-orgd607b78">
 <p>
 Skip
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgd4fcb55" class="outline-2">
-<h2 id="orgd4fcb55">The Lebesgue Integral</h2>
-<div class="outline-text-2" id="text-orgd4fcb55">
+<div id="outline-container-org3d0c86a" class="outline-2">
+<h2 id="org3d0c86a">The Lebesgue Integral</h2>
+<div class="outline-text-2" id="text-org3d0c86a">
 <p>
 Skip
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgcfd3a54" class="outline-2">
-<h2 id="orgcfd3a54">Lebesgue Spaces and Inequalities</h2>
-<div class="outline-text-2" id="text-orgcfd3a54">
+<div id="outline-container-org6c21463" class="outline-2">
+<h2 id="org6c21463">Lebesgue Spaces and Inequalities</h2>
+<div class="outline-text-2" id="text-org6c21463">
 <p>
 <a href="https://web.ma.utexas.edu/users/gordanz/notes/lp_inequalities.pdf">Source</a>: 10 pages.
 </p>
@@ -90,9 +94,9 @@ Key Concepts: pseudo norm, convergence in \(\mathcal{L}^1\), essential supremum,
 </div>
 </div>
 
-<div id="outline-container-org64274d2" class="outline-2">
-<h2 id="org64274d2">Fubini-Tonelli and Radon-Nikodym Theorem</h2>
-<div class="outline-text-2" id="text-org64274d2">
+<div id="outline-container-org9e99d43" class="outline-2">
+<h2 id="org9e99d43">Fubini-Tonelli and Radon-Nikodym Theorem</h2>
+<div class="outline-text-2" id="text-org9e99d43">
 <p>
 <a href="https://web.ma.utexas.edu/users/gordanz/notes/fubini_radon.pdf">Source</a>: 13 pages.
 </p>
@@ -125,9 +129,9 @@ Cite: <a href="https://en.wikipedia.org/wiki/Riesz_representation_theorem">Riesz
 </div>
 </div>
 
-<div id="outline-container-org5c0f0f2" class="outline-2">
-<h2 id="org5c0f0f2">Basic Probability</h2>
-<div class="outline-text-2" id="text-org5c0f0f2">
+<div id="outline-container-org35b07cf" class="outline-2">
+<h2 id="org35b07cf">Basic Probability</h2>
+<div class="outline-text-2" id="text-org35b07cf">
 <p>
 <a href="https://web.ma.utexas.edu/users/gordanz/notes/basic_probability.pdf">Source</a>: 17 pages.
 </p>
@@ -140,12 +144,120 @@ Cite: <a href="https://en.wikipedia.org/wiki/Riesz_representation_theorem">Riesz
 <p>
 Key Concepts: probability space, continuity of probability, random variable, expectation, convergence in probability, distribution function, cumulative distribution function, absolutely continuous random variable, probability density distribution function, independence of random variables, independence of set classes, independence means multiply, uncorrelated random variables.
 </p></li>
+
+<li><p>
+<span class="timestamp-wrapper"><span class="timestamp">[2022-03-19 六] </span></span> 20:00&#x2013;21:30
+</p>
+
+<p>
+Key Concepts: distribution, distribution function, probability density distribution function  of sum of random variables, convolution of function, convolution of measure, transform the uniform random variable, the existence of i.i.d random variables.
+</p></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7de0e5e" class="outline-2">
+<h2 id="org7de0e5e">Weak Convergence</h2>
+<div class="outline-text-2" id="text-org7de0e5e">
+<p>
+<a href="https://web.ma.utexas.edu/users/gordanz/notes/weak.pdf">Source</a>: 9 pages.
+</p>
+
+<ul class="org-ul">
+<li><p>
+<span class="timestamp-wrapper"><span class="timestamp">[2022-03-22 二] </span></span> 20:00&#x2013;21:30
+</p>
+
+<p>
+Key Concepts: weakly converge, converge in distribution, uniqueness of limit for weakly convergence, Portmanteau theorem, \(\mu\)-continuity, pointwise convergence at continuous points is equivalent to weakly convergence
+</p></li>
+
+<li><p>
+<span class="timestamp-wrapper"><span class="timestamp">[2022-03-24 四] </span></span> 20:00-21:30
+</p>
+
+<p>
+Key Concepts: tight, relatively (sequentially) weakly compact, Prohorov theorem, relation between convergence in probability and convergence in distribution.
+</p></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6b1c7a9" class="outline-2">
+<h2 id="org6b1c7a9">Characteristic Functions</h2>
+<div class="outline-text-2" id="text-org6b1c7a9">
+<p>
+<a href="https://web.ma.utexas.edu/users/gordanz/notes/characteristic.pdf">Source</a>: 9 pages.
+</p>
+
+<ul class="org-ul">
+<li><p>
+<span class="timestamp-wrapper"><span class="timestamp">[2022-03-29 二] </span></span> 9:00&#x2013;10:30
+</p>
+
+<p>
+Key Concepts: characteristic function of a probability measure, characteristic function of a random variable, basic properties of characteristic function , inversion theorem, equality of characteristic function implies equality of distribution function, integrable of characteristic function implies absolutely continuous
+</p></li>
+
+<li><p>
+<span class="timestamp-wrapper"><span class="timestamp">[2022-03-29 二] </span></span> 15:00&#x2013;16:30
+</p>
+
+<p>
+Key Concepts: derivatives of characteristic function, tail probability bounded by characteristic function, characteristic function vanishes at infinity, weakly converges if and only if characteristic function converges pointwise.
+</p></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4741f95" class="outline-2">
+<h2 id="org4741f95">The Weak Law of Large Numbers and Central Limit Theorem</h2>
+<div class="outline-text-2" id="text-org4741f95">
+<p>
+<a href="https://web.ma.utexas.edu/users/gordanz/notes/wlln_clt.pdf">Source</a>: 10 pages.
+</p>
+
+<ul class="org-ul">
+<li><p>
+<span class="timestamp-wrapper"><span class="timestamp">[2022-04-07 四] </span></span> 19:30&#x2013;21:00
+</p>
+
+<p>
+Key Concepts: weak law of large numbers, central limit theorem
+</p></li>
+
+<li><p>
+<span class="timestamp-wrapper"><span class="timestamp">[2022-04-08 五] </span></span> 9:30&#x2013;11:00
+</p>
+
+<p>
+Key Concepts: Lindeberg-Feller theorem, cycles in a random permutation
+</p></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf482eb8" class="outline-2">
+<h2 id="orgf482eb8">Conditional Expectation</h2>
+<div class="outline-text-2" id="text-orgf482eb8">
+<p>
+<a href="https://web.ma.utexas.edu/users/gordanz/notes/conditional_expectation.pdf">Source</a>: 17 pages.
+</p>
+
+<ul class="org-ul">
+<li><p>
+<span class="timestamp-wrapper"><span class="timestamp">[2022-04-14 四] </span></span> 20:00&#x2013;21:30
+</p>
+
+<p>
+Key Concepts:
+</p></li>
 </ul>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Last modified: 2022-03-17 四 21:56</p>
+<p class="date">Last modified: 2022-04-14 四 20:07</p>
 </div>
 </body>
 </html>
