@@ -1,8 +1,3 @@
-blockquote {
-    border-top: 3px dotted #ccc;
-    border-bottom: 3px dotted #ccc;
-}
-
 :not(pre) > code {
     color: #d33682;
     border: #fdf6e3;
