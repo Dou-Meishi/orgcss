@@ -73,6 +73,22 @@ details[open] summary .expand-icon {
     color: #859900;  /* solarized green */
 }
 
+/* Make org.css from http://gongzhitaao.org/orgcss/org.css */
+/* compatible with KaTeX equation tags. */
+span.katex-display span.tag {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+span.katex-display .tag span {
+    padding: 0px;
+    float: inherit;
+    margin-right: inherit;
+    border: none;
+    background-color: inherit;
+}
+
 @media screen {
     body {
         width: auto;
