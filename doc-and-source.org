@@ -1,0 +1,278 @@
+#+TITLE: My Org CSS
+#+SUBTITLE: Documentation and Source Code
+#+DATE: [2025-08-20]
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="dou-new-org.css"/>
+#+HTML_HEAD_EXTRA: <script defer src="hide-toc.js"></script>
+#+PROPERTY: header-args :tangle ./dou-new-org.css
+
+This is my custom stylesheet for Org-exported HTML pages. It is built
+on top of [[https://gongzhitaao.org/orgcss/][Gong's Org CSS]].
+
+The goal is to create clean HTML pages for both screen viewing and
+PDF printing. Gong's CSS provides a great starting point, and I have
+been using it for over five years. Over time, however, I have
+developed several opinions on how to "improve" it in my preferred way,
+which then motivates this project.
+
+This document is written in Emacs Org mode, and invoking the command
+=org-babel-tangle= will extract all CSS snippets into a single file
+=./dou-new-org.css=.
+
+** General Considerations
+
+I have always appreciated the elegance of serif fonts, especially
+their exquisite details at larger sizes. I also value the clean look
+and excellent readability of sans-serif fonts, particularly in smaller
+text. Considering these preferences, I use the following font
+settings:
+
+- *Lora* (a serif font) for titles and headlines.
+
+- *Fira Sans* (a sans-serif font) for the main text[fn:2].
+
+- *Fira Code* (a monospace font) for code and code-like elements.
+
+I also use a variety of colors to make the page look vivid and fresh:
+
+- *Black* =#00000= for the title and subtitle.
+
+- *Blue* =#527d9a= for headlines, matching the color of hyperlinks.
+
+- *Magenta* =#d33682= for inline code, consistent with the Solarized
+  palette I use in Org mode.
+
+In the next section, I will provide CSS snippets to achieve these
+effects, along with a few other specific tweaks.
+
+** CSS Snippets
+
+/Grouped by elements or topics./
+
+**** Blockquote
+
+Use italic style.
+
+#+BEGIN_SRC css
+blockquote {
+    font-style: italic;
+}
+#+END_SRC
+
+**** Body
+
+Set font; set body width to 950 px if possible.
+
+#+BEGIN_SRC css
+body {
+    font-family: Fira Sans, sans-serif;
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        width: 950px;
+    }
+}
+#+END_SRC
+
+**** Code
+
+Set color for inline code; remove the border and padding for inline
+code; Set font for all code-like elements[fn:1].
+
+#+BEGIN_SRC css
+:not(pre) > code {
+    color: #d33682;
+    border: initial;
+    padding: initial;
+}
+
+code, kbd, pre, samp {
+    font-family: Fira Code, monospace;
+}
+#+END_SRC
+
+**** Headlines
+
+Set font; set color.
+
+#+BEGIN_SRC css
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lora, serif;
+    color: #527d9a;
+}
+#+END_SRC
+
+**** Home and up links
+
+Align left.
+
+#+BEGIN_SRC css
+#org-div-home-and-up {
+    text-align: left;
+}
+#+END_SRC
+
+**** Preamble and Postamble
+
+Gray out.
+
+#+BEGIN_SRC css
+.status {
+    color: #888888;
+}
+#+END_SRC
+
+**** Reference list
+
+Increase the lineskip to match normal text.
+
+#+BEGIN_SRC css
+.csl-entry {
+    margin: 1em auto;
+}
+#+END_SRC
+
+**** Section symbol
+
+Add the section sign "§".
+
+#+BEGIN_SRC css
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+    content: "§ ";
+    margin-right: 0.4em;
+    font-size: 70%;
+    vertical-align: top;
+}
+#+END_SRC
+
+**** Summary
+
+Set cursor.
+
+#+BEGIN_SRC css
+summary {
+    cursor: pointer;
+}
+#+END_SRC
+
+**** Table of Contents
+
+Set font to match headlines.
+
+#+BEGIN_SRC css
+#table-of-contents {
+    font-family: Lora, serif;
+}
+#+END_SRC
+
+**** Title and subtitle
+
+Use small caps; align left; smaller size for the subtitle.
+
+#+BEGIN_SRC css
+.title {
+    font-variant-caps: small-caps;
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 60%;
+}
+#+END_SRC
+
+**** To-do keywords
+
+Consistent with the appearance in my Org mode.
+
+#+BEGIN_SRC css
+.todo {
+    background-color: inherit;  /* disable default background-color */
+}
+
+.done {
+    background-color: inherit;  /* disable default background-color */
+}
+
+.todo.TODO {
+    color: #dc322f;  /* solarized red */
+}
+
+.todo.NEXT{
+    color: #d33682;  /* solarized magenta */
+}
+
+.todo.FOLLOW{
+    color: #268bd2;  /* solarized blue */
+}
+
+.todo.WAITING{
+    color: #2aa198;  /* solarized cyan */
+}
+
+.todo.INACTIVE{
+    color: #6c71c4;  /* solarized violet */
+}
+
+.done.CANCELLED{
+    color: #859900;  /* solarized green */
+}
+
+.done.DONE{
+    color: #859900;  /* solarized green */
+}
+#+END_SRC
+
+** TODO Appendix: Animate the Details Element
+
+Add smooth transitions for collapsing and expanding of =<details>= and
+=<summary>= elements.
+
+** TODO Appendix: Hide the Table of Contents
+
+Use JS to hide the default TOC in the title. In particular, wrap the
+whole TOC (if persent) within the title via a detail/summary pair.
+
+#+BEGIN_SRC js :tangle no
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the title and TOC elements
+  const title = document.querySelector('h1.title');
+  const toc = document.querySelector('#table-of-contents');
+  const titleParent = title.parentNode
+
+  // Only proceed if both elements are found
+  if (title && toc) {
+    // Create the needed elements
+    const details = document.createElement('details');
+    const summary = document.createElement('summary');
+
+    // Move the title inside the summary (preserving events, properties etc.)
+    summary.appendChild(title);
+
+    // Assemble the structure
+    details.appendChild(summary);
+    details.appendChild(toc);
+
+    // Insert details at the position where title was (before the first one)
+    titleParent.insertBefore(details, titleParent.firstChild);
+
+    // title and toc have now been moved into 'details', no need to remove originals
+  }
+});
+#+END_SRC
+
+** Footnotes
+
+[fn:1] Set the export option =org-html-htmlize-output-type= to
+/inline-css/ to ensure that Emacs exports code blocks with the same
+color scheme as the current buffer; see [[https://github.com/gongzhitaao/orgcss?tab=readme-ov-file#code-highlight][here]] for more explanations.
+
+[fn:2] For specific pages (e.g., math-related posts), I may use Lora
+for the main text to enhance the professional feelings. This can be
+done by setting export options on a per-file basis by adding a line
+=#+HTML_HEAD_EXTRA: <style>body {font-family: Lora, serif;}</style>=.
+
