@@ -3,8 +3,8 @@
 #+DATE: [2025-08-20]
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="test.css"/>
-#+HTML_LINK_UP:
-#+HTML_LINK_HOME:
+#+HTML_LINK_UP: ../../../orgcss/
+#+HTML_LINK_HOME: ../../../orgcss/
 
 This is my custom stylesheet for Org-exported HTML pages. It is built
 on top of [[https://gongzhitaao.org/orgcss/][Gong's Org CSS]].
