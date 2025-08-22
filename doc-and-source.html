@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Aug 22, Fri, 2025 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Org CSS</title>
+<meta name="author" content="Dou Meishi" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="dou-new-org.css"/>
+</head>
+<body>
+<div id="preamble" class="status">
+<p class="date">Created: Aug 20, Wed, 2025</p>
+<p class="date">Modified: Aug 22, Fri, 2025</p>
+</div>
+<div id="content" class="content">
+<h1 class="title">My Org CSS
+<br>
+<span class="subtitle">Documentation and Source Code</span>
+</h1>
+<p>
+This is my custom stylesheet for Org-exported HTML pages. It is built
+on top of <a href="https://gongzhitaao.org/orgcss/">Gong's Org CSS</a>.
+</p>
+
+<p>
+The goal is to create clean HTML pages for both screen viewing and
+PDF printing. Gong's CSS provides a great starting point, and I have
+been using it for over five years. Over time, however, I have
+developed several opinions on how to "improve" it in my preferred way,
+which then motivates this project.
+</p>
+
+<p>
+This document is written in Emacs Org mode, and invoking the command
+<code>org-babel-tangle</code> will extract all CSS snippets into a single file
+<code>./dou-new-org.css</code>.
+</p>
+
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org66173a8">General Considerations</a></li>
+<li><a href="#org8e989fa">CSS Snippets</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org88e2ca3">Blockquote</a></li>
+<li><a href="#org5c8f828">Body</a></li>
+<li><a href="#org73a6bed">Code</a></li>
+<li><a href="#org3b32538">Headlines</a></li>
+<li><a href="#orgdd15cfb">Home and up links</a></li>
+<li><a href="#org776d7f0">Preamble and Postamble</a></li>
+<li><a href="#orgd920876">Reference list</a></li>
+<li><a href="#orgc8310c6">Section symbol</a></li>
+<li><a href="#orgf275f2e">Summary</a></li>
+<li><a href="#org144be7c">Table of Contents</a></li>
+<li><a href="#org7030f21">Title and subtitle</a></li>
+<li><a href="#org06e5a61">To-do keywords</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc5f2f38"><span class="todo TODO">TODO</span> Appendix: Animate the Details Element</a></li>
+<li><a href="#org1470484"><span class="done CANCELLED">CANCELLED</span> Appendix: Copy Button for Code Blocks</a></li>
+<li><a href="#orgae02c12"><span class="done DONE">DONE</span> Appendix: Display Language Name in Source Blocks</a></li>
+<li><a href="#orga049213"><span class="done DONE">DONE</span> Appendix: Hide the Table of Contents</a></li>
+<li><a href="#org6c48a09"><span class="done DONE">DONE</span> Appendix: Related Emacs Settings</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org66173a8" class="outline-2">
+<h2 id="org66173a8"><a href="#org66173a8">General Considerations</a></h2>
+<div class="outline-text-2" id="text-org66173a8">
+<p>
+I have always appreciated the elegance of serif fonts, especially
+their exquisite details at larger sizes. I also value the clean look
+and excellent readability of sans-serif fonts, particularly in smaller
+text. Considering these preferences, I use the following font
+settings:
+</p>
+
+<ul class="org-ul">
+<li><b>Lora</b> (a serif font) for titles and headlines.</li>
+
+<li><b>Fira Sans</b> (a sans-serif font) for the main text<sup>[<a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a>]</sup>.</li>
+
+<li><b>Fira Code</b> (a monospace font) for code and code-like elements.</li>
+</ul>
+
+<p>
+I also use a variety of colors to make the page look vivid and fresh:
+</p>
+
+<ul class="org-ul">
+<li><b>Black</b> <code>#00000</code> for the title and subtitle.</li>
+
+<li><b>Blue</b> <code>#527d9a</code> for headlines, matching the color of hyperlinks.</li>
+
+<li><b>Magenta</b> <code>#d33682</code> for inline code, consistent with the Solarized
+palette I use in Org mode.</li>
+</ul>
+
+<p>
+In the next section, I will provide CSS snippets to achieve these
+effects, along with a few other specific tweaks.
+</p>
+</div>
+</div>
+<div id="outline-container-org8e989fa" class="outline-2">
+<h2 id="org8e989fa"><a href="#org8e989fa">CSS Snippets</a></h2>
+<div class="outline-text-2" id="text-org8e989fa">
+<p>
+<i>Grouped by elements or topics.</i>
+</p>
+</div>
+<div id="outline-container-org88e2ca3" class="outline-4">
+<h4 id="org88e2ca3"><a href="#org88e2ca3">Blockquote</a></h4>
+<div class="outline-text-4" id="text-org88e2ca3">
+<p>
+Use italic style.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">blockquote</span> {
+    <span style="color: #859900; font-weight: bold;">font-style</span>: italic;
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5c8f828" class="outline-4">
+<h4 id="org5c8f828"><a href="#org5c8f828">Body</a></h4>
+<div class="outline-text-4" id="text-org5c8f828">
+<p>
+Set font; set body width to 950 px if possible.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">body</span> {
+    <span style="color: #859900; font-weight: bold;">font-family</span>: Fira Sans, sans-serif;
+}
+
+<span style="color: #657b83; font-weight: bold;">@media</span> screen and (min-width: 960px) {
+    <span style="color: #268bd2;">body</span> {
+        <span style="color: #859900; font-weight: bold;">width</span>: 950px;
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org73a6bed" class="outline-4">
+<h4 id="org73a6bed"><a href="#org73a6bed">Code</a></h4>
+<div class="outline-text-4" id="text-org73a6bed">
+<p>
+Set color for inline code; remove the border and padding for inline
+code; Set font for all code-like elements<sup>[<a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a>]</sup>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">:not(pre) &gt; code</span> {
+    <span style="color: #859900; font-weight: bold;">color</span>: <span style="color: #ffffff; background-color: #d33682;">#d33682</span>;
+    <span style="color: #859900; font-weight: bold;">border</span>: initial;
+    <span style="color: #859900; font-weight: bold;">padding</span>: initial;
+}
+
+<span style="color: #268bd2;">code, kbd, pre, samp</span> {
+    <span style="color: #859900; font-weight: bold;">font-family</span>: Fira Code, monospace;
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org3b32538" class="outline-4">
+<h4 id="org3b32538"><a href="#org3b32538">Headlines</a></h4>
+<div class="outline-text-4" id="text-org3b32538">
+<p>
+Set font; set color.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">h1, h2, h3, h4, h5, h6</span> {
+    <span style="color: #859900; font-weight: bold;">font-family</span>: Lora, serif;
+    <span style="color: #859900; font-weight: bold;">color</span>: <span style="color: #ffffff; background-color: #527d9a;">#527d9a</span>;
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdd15cfb" class="outline-4">
+<h4 id="orgdd15cfb"><a href="#orgdd15cfb">Home and up links</a></h4>
+<div class="outline-text-4" id="text-orgdd15cfb">
+<p>
+Align left.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">#org-div-home-and-up</span> {
+    <span style="color: #859900; font-weight: bold;">text-align</span>: left;
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org776d7f0" class="outline-4">
+<h4 id="org776d7f0"><a href="#org776d7f0">Preamble and Postamble</a></h4>
+<div class="outline-text-4" id="text-org776d7f0">
+<p>
+Gray out.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">.status</span> {
+    <span style="color: #859900; font-weight: bold;">color</span>: <span style="color: #ffffff; background-color: #888888;">#888888</span>;
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd920876" class="outline-4">
+<h4 id="orgd920876"><a href="#orgd920876">Reference list</a></h4>
+<div class="outline-text-4" id="text-orgd920876">
+<p>
+Increase the lineskip to match normal text<sup>[<a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a>]</sup>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">.csl-entry</span> {
+    <span style="color: #859900; font-weight: bold;">margin</span>: 1em auto;
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc8310c6" class="outline-4">
+<h4 id="orgc8310c6"><a href="#orgc8310c6">Section symbol</a></h4>
+<div class="outline-text-4" id="text-orgc8310c6">
+<p>
+Add the section sign "§".
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">h2::before,</span>
+<span style="color: #268bd2;">h3::before,</span>
+<span style="color: #268bd2;">h4::before,</span>
+<span style="color: #268bd2;">h5::before,</span>
+<span style="color: #268bd2;">h6::before</span> {
+    <span style="color: #859900; font-weight: bold;">content</span>: <span style="color: #2aa198;">"&#167; "</span>;
+    <span style="color: #859900; font-weight: bold;">margin-right</span>: 0.4em;
+    <span style="color: #859900; font-weight: bold;">font-size</span>: 70%;
+    <span style="color: #859900; font-weight: bold;">vertical-align</span>: top;
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf275f2e" class="outline-4">
+<h4 id="orgf275f2e"><a href="#orgf275f2e">Summary</a></h4>
+<div class="outline-text-4" id="text-orgf275f2e">
+<p>
+Set cursor.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">summary</span> {
+    <span style="color: #859900; font-weight: bold;">cursor</span>: pointer;
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org144be7c" class="outline-4">
+<h4 id="org144be7c"><a href="#org144be7c">Table of Contents</a></h4>
+<div class="outline-text-4" id="text-org144be7c">
+<p>
+Set font to match headlines.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">#table-of-contents</span> {
+    <span style="color: #859900; font-weight: bold;">font-family</span>: Lora, serif;
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org7030f21" class="outline-4">
+<h4 id="org7030f21"><a href="#org7030f21">Title and subtitle</a></h4>
+<div class="outline-text-4" id="text-org7030f21">
+<p>
+Use small caps; align left; smaller size for the subtitle.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">.title</span> {
+    <span style="color: #859900; font-weight: bold;">font-variant-caps</span>: small-caps;
+    <span style="color: #859900; font-weight: bold;">text-align</span>: left;
+}
+
+<span style="color: #268bd2;">.subtitle</span> {
+    <span style="color: #859900; font-weight: bold;">font-size</span>: 60%;
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org06e5a61" class="outline-4">
+<h4 id="org06e5a61"><a href="#org06e5a61">To-do keywords</a></h4>
+<div class="outline-text-4" id="text-org06e5a61">
+<p>
+Consistent with the appearance in my Org mode.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">.todo</span> {
+    <span style="color: #859900; font-weight: bold;">background-color</span>: inherit;  <span style="color: #93a1a1;">/* </span><span style="color: #93a1a1;">disable default background-color</span><span style="color: #93a1a1;"> */</span>
+}
+
+<span style="color: #268bd2;">.done</span> {
+    <span style="color: #859900; font-weight: bold;">background-color</span>: inherit;  <span style="color: #93a1a1;">/* </span><span style="color: #93a1a1;">disable default background-color</span><span style="color: #93a1a1;"> */</span>
+}
+
+<span style="color: #268bd2;">.todo.TODO</span> {
+    <span style="color: #859900; font-weight: bold;">color</span>: <span style="color: #ffffff; background-color: #dc322f;">#dc322f</span>;  <span style="color: #93a1a1;">/* </span><span style="color: #93a1a1;">solarized red</span><span style="color: #93a1a1;"> */</span>
+}
+
+<span style="color: #268bd2;">.todo.NEXT</span>{
+    <span style="color: #859900; font-weight: bold;">color</span>: <span style="color: #ffffff; background-color: #d33682;">#d33682</span>;  <span style="color: #93a1a1;">/* </span><span style="color: #93a1a1;">solarized magenta</span><span style="color: #93a1a1;"> */</span>
+}
+
+<span style="color: #268bd2;">.todo.FOLLOW</span>{
+    <span style="color: #859900; font-weight: bold;">color</span>: <span style="color: #ffffff; background-color: #268bd2;">#268bd2</span>;  <span style="color: #93a1a1;">/* </span><span style="color: #93a1a1;">solarized blue</span><span style="color: #93a1a1;"> */</span>
+}
+
+<span style="color: #268bd2;">.todo.WAITING</span>{
+    <span style="color: #859900; font-weight: bold;">color</span>: <span style="color: #ffffff; background-color: #2aa198;">#2aa198</span>;  <span style="color: #93a1a1;">/* </span><span style="color: #93a1a1;">solarized cyan</span><span style="color: #93a1a1;"> */</span>
+}
+
+<span style="color: #268bd2;">.todo.INACTIVE</span>{
+    <span style="color: #859900; font-weight: bold;">color</span>: <span style="color: #ffffff; background-color: #6c71c4;">#6c71c4</span>;  <span style="color: #93a1a1;">/* </span><span style="color: #93a1a1;">solarized violet</span><span style="color: #93a1a1;"> */</span>
+}
+
+<span style="color: #268bd2;">.done.CANCELLED</span>{
+    <span style="color: #859900; font-weight: bold;">color</span>: <span style="color: #ffffff; background-color: #859900;">#859900</span>;  <span style="color: #93a1a1;">/* </span><span style="color: #93a1a1;">solarized green</span><span style="color: #93a1a1;"> */</span>
+}
+
+<span style="color: #268bd2;">.done.DONE</span>{
+    <span style="color: #859900; font-weight: bold;">color</span>: <span style="color: #ffffff; background-color: #859900;">#859900</span>;  <span style="color: #93a1a1;">/* </span><span style="color: #93a1a1;">solarized green</span><span style="color: #93a1a1;"> */</span>
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc5f2f38" class="outline-2">
+<h2 id="orgc5f2f38"><a href="#orgc5f2f38"><span class="todo TODO">TODO</span> Appendix: Animate the Details Element</a></h2>
+<div class="outline-text-2" id="text-orgc5f2f38">
+<p>
+Add smooth transitions for collapsing and expanding of <code>&lt;details&gt;</code> and
+<code>&lt;summary&gt;</code> elements.
+</p>
+</div>
+</div>
+<div id="outline-container-org1470484" class="outline-2">
+<h2 id="org1470484"><a href="#org1470484"><span class="done CANCELLED">CANCELLED</span> Appendix: Copy Button for Code Blocks</a></h2>
+<div class="outline-text-2" id="text-org1470484">
+<p>
+Add a button for copying the content of code blocks.
+</p>
+</div>
+</div>
+<div id="outline-container-orgae02c12" class="outline-2">
+<h2 id="orgae02c12"><a href="#orgae02c12"><span class="done DONE">DONE</span> Appendix: Display Language Name in Source Blocks</a></h2>
+<div class="outline-text-2" id="text-orgae02c12">
+<p>
+Extend Gong's CSS to support more lanauges.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #268bd2;">.org-src-container&gt;pre.src-conf:before</span> {
+    <span style="color: #859900; font-weight: bold;">content</span>: <span style="color: #2aa198;">"Conf"</span>
+}
+
+<span style="color: #268bd2;">.org-src-container&gt;pre.src-elisp:before</span> {
+    <span style="color: #859900; font-weight: bold;">content</span>: <span style="color: #2aa198;">"Emacs Lisp"</span>
+}
+
+<span style="color: #268bd2;">.org-src-container&gt;pre.src-toml:before</span> {
+    <span style="color: #859900; font-weight: bold;">content</span>: <span style="color: #2aa198;">"TOML"</span>
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga049213" class="outline-2">
+<h2 id="orga049213"><a href="#orga049213"><span class="done DONE">DONE</span> Appendix: Hide the Table of Contents</a></h2>
+<div class="outline-text-2" id="text-orga049213">
+<p>
+Use JS to hide the default TOC in the title. In particular, wrap the
+whole TOC (if persent) within the title via a detail/summary pair.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="color: #93a1a1;">// </span><span style="color: #93a1a1;">Hide TOC</span>
+document.addEventListener(<span style="color: #2aa198;">'DOMContentLoaded'</span>, <span style="color: #859900; font-weight: bold;">function</span> () {
+  <span style="color: #93a1a1;">// </span><span style="color: #93a1a1;">Get the title and TOC elements</span>
+  <span style="color: #859900; font-weight: bold;">const</span> <span style="color: #268bd2;">title</span> = document.querySelector(<span style="color: #2aa198;">'h1.title'</span>);
+  <span style="color: #859900; font-weight: bold;">const</span> <span style="color: #268bd2;">toc</span> = document.querySelector(<span style="color: #2aa198;">'#table-of-contents'</span>);
+  <span style="color: #859900; font-weight: bold;">const</span> <span style="color: #268bd2;">titleParent</span> = title.parentNode
+
+  <span style="color: #93a1a1;">// </span><span style="color: #93a1a1;">Only proceed if both elements are found</span>
+  <span style="color: #859900; font-weight: bold;">if</span> (title &amp;&amp; toc) {
+    <span style="color: #93a1a1;">// </span><span style="color: #93a1a1;">Create the needed elements</span>
+    <span style="color: #859900; font-weight: bold;">const</span> <span style="color: #268bd2;">details</span> = document.createElement(<span style="color: #2aa198;">'details'</span>);
+    <span style="color: #859900; font-weight: bold;">const</span> <span style="color: #268bd2;">summary</span> = document.createElement(<span style="color: #2aa198;">'summary'</span>);
+
+    <span style="color: #93a1a1;">// </span><span style="color: #93a1a1;">Move the title inside the summary (preserving events, properties etc.)</span>
+    summary.appendChild(title);
+
+    <span style="color: #93a1a1;">// </span><span style="color: #93a1a1;">Assemble the structure</span>
+    details.appendChild(summary);
+    details.appendChild(toc);
+
+    <span style="color: #93a1a1;">// </span><span style="color: #93a1a1;">Insert details as the first child of the original parent of title.</span>
+    titleParent.insertBefore(details, titleParent.firstChild);
+
+    <span style="color: #93a1a1;">// </span><span style="color: #93a1a1;">title and toc have now been moved into 'details', no need to remove originals</span>
+  }
+});
+</pre>
+</div>
+
+<p>
+<b>Usage.</b> Save the above snippet as <code>./hide-toc.js</code>, and insert it in the
+exported HTML head via adding a line
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">#+HTML_HEAD_EXTRA: &lt;script defer src="hide-toc.js"&gt;&lt;/script&gt;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org6c48a09" class="outline-2">
+<h2 id="org6c48a09"><a href="#org6c48a09"><span class="done DONE">DONE</span> Appendix: Related Emacs Settings</a></h2>
+<div class="outline-text-2" id="text-org6c48a09">
+<p>
+Below is my configuring snippet related to org exporting for this project.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #859900; font-weight: bold;">use-package</span> org
+  <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">org export general options</span>
+  <span style="color: #657b83; font-weight: bold;">:config</span>
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-export-default-language <span style="color: #2aa198;">"en"</span>)
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-export-with-section-numbers nil)
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-export-with-sub-superscripts '{})
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-export-with-toc 4)
+)
+
+(<span style="color: #859900; font-weight: bold;">use-package</span> org
+  <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">org HTML export options</span>
+  <span style="color: #657b83; font-weight: bold;">:config</span>
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-html-checkbox-type 'unicode)
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-html-doctype <span style="color: #2aa198;">"html5"</span>)
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-html-footnote-format <span style="color: #2aa198;">"&lt;sup&gt;[%s]&lt;/sup&gt;"</span>)
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-html-head-include-default-style nil)
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-html-htmlize-output-type 'inline-css)
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-html-metadata-timestamp-format <span style="color: #2aa198;">"%b %d, %a, %Y"</span>)
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-html-postamble <span style="color: #2aa198;">"\</span>
+<span style="color: #2aa198;">&lt;p class=\"author\"&gt;Author: %a&lt;/p&gt;</span>
+<span style="color: #2aa198;">&lt;p class=\"date\"&gt;Exported: %T&lt;/p&gt;"</span>)
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-html-preamble <span style="color: #2aa198;">"\</span>
+<span style="color: #2aa198;">&lt;p class=\"date\"&gt;Created: %d&lt;/p&gt;</span>
+<span style="color: #2aa198;">&lt;p class=\"date\"&gt;Modified: %C&lt;/p&gt;"</span>)
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-html-self-link-headlines t)
+  (<span style="color: #859900; font-weight: bold;">setq</span> org-html5-fancy t)
+)
+</pre>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup>[<a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a>]</sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+For specific pages (e.g., math-related posts), I may use Lora
+for the main text to enhance the professional feelings. This can be
+done by setting export options on a per-file basis by adding a line
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">#+HTML_HEAD_EXTRA: &lt;style&gt;body {font-family: Lora, serif;}&lt;/style&gt;
+</pre>
+</div></div></div>
+
+<div class="footdef"><sup>[<a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a>]</sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Set the export option <code>org-html-htmlize-output-type</code> to
+<i>inline-css</i> to ensure that Emacs exports code blocks with the same
+color scheme as the current buffer; see <a href="https://github.com/gongzhitaao/orgcss?tab=readme-ov-file#code-highlight">here</a> for more explanations.
+</p></div></div>
+
+<div class="footdef"><sup>[<a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a>]</sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+See <a href="https://dou-meishi.github.io/org-blog/2025-05-11-LearnOrgCite/notes.html">my post</a> for how to write citations in Org mode.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Dou Meishi</p>
+<p class="date">Exported: Aug 22, Fri, 2025</p>
+</div>
+</body>
+</html>
