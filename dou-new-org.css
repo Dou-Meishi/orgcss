@@ -1,0 +1,120 @@
+blockquote {
+    font-style: italic;
+}
+
+body {
+    font-family: Fira Sans, sans-serif;
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        width: 950px;
+    }
+}
+
+:not(pre) > code {
+    color: #d33682;
+    border: initial;
+    padding: initial;
+}
+
+code, kbd, pre, samp {
+    font-family: Fira Code, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lora, serif;
+    color: #527d9a;
+}
+
+#org-div-home-and-up {
+    text-align: left;
+}
+
+.status {
+    color: #888888;
+}
+
+.csl-entry {
+    margin: 1em auto;
+}
+
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+    content: "§ ";
+    margin-right: 0.4em;
+    font-size: 70%;
+    vertical-align: top;
+}
+
+summary {
+    cursor: pointer;
+}
+
+#table-of-contents {
+    font-family: Lora, serif;
+}
+
+.title {
+    font-variant-caps: small-caps;
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 60%;
+}
+
+.todo {
+    background-color: inherit;  /* disable default background-color */
+}
+
+.done {
+    background-color: inherit;  /* disable default background-color */
+}
+
+.todo.TODO {
+    color: #dc322f;  /* solarized red */
+}
+
+.todo.NEXT{
+    color: #d33682;  /* solarized magenta */
+}
+
+.todo.FOLLOW{
+    color: #268bd2;  /* solarized blue */
+}
+
+.todo.WAITING{
+    color: #2aa198;  /* solarized cyan */
+}
+
+.todo.INACTIVE{
+    color: #6c71c4;  /* solarized violet */
+}
+
+.done.CANCELLED{
+    color: #859900;  /* solarized green */
+}
+
+.done.DONE{
+    color: #859900;  /* solarized green */
+}
+
+.org-src-container>pre.src-conf:before {
+    content: "Conf"
+}
+
+.org-src-container>pre.src-elisp:before {
+    content: "Emacs Lisp"
+}
+
+.org-src-container>pre.src-toml:before {
+    content: "TOML"
+}
+
+#+HTML_HEAD_EXTRA: <script defer src="hide-toc.js"></script>
+
+#+HTML_HEAD_EXTRA: <style>body {font-family: Lora, serif;}</style>

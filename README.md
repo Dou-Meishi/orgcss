@@ -1,4 +1,8 @@
-A patch for following CSS themes
+# My Org CSS
 
-- `http://gongzhitaao.org/orgcss/org.css` [[Example](https://gongzhitaao.org/orgcss/)]
-- `https://orgmode.org/worg/style/worg.css` [[Example](https://orgmode.org/worg/)]
+This is my custom stylesheet for Org-exported HTML pages. It is built
+on top of [Gong's Org CSS](https://gongzhitaao.org/orgcss/).
+
+See documentation [here](./doc-and-source.html).
+
+See a demo [here](./example/Demo/demo.html).
