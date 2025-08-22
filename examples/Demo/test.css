@@ -1,3 +1,32 @@
+blockquote {
+    font-style: italic;
+}
+
+body {
+    font-family: Fira Sans, sans-serif;
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        width: 950px;
+    }
+}
+
+:not(pre) > code {
+    color: #d33682;
+    border: initial;
+    padding: initial;
+}
+
+code, kbd, pre, samp {
+    font-family: Fira Code, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lora, serif;
+    color: #527d9a;
+}
+
 #org-div-home-and-up {
     text-align: left;
 }
@@ -6,13 +35,27 @@
     color: #888888;
 }
 
-body {
-    font-family: Fira Sans, sans-serif;
+.csl-entry {
+    margin: 1em auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+    content: "§ ";
+    margin-right: 0.4em;
+    font-size: 70%;
+    vertical-align: top;
+}
+
+summary {
+    cursor: pointer;
+}
+
+#table-of-contents {
     font-family: Lora, serif;
-    color: #527d9a;
 }
 
 .title {
@@ -20,11 +63,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
 }
 
-.title .subtitle {
+.subtitle {
     font-size: 60%;
 }
-
-/* Emacs TODO keyword faces */
 
 .todo {
     background-color: inherit;  /* disable default background-color */
@@ -62,43 +103,18 @@ h1, h2, h3, h4, h5, h6 {
     color: #859900;  /* solarized green */
 }
 
-/* Section sign */
-h2::before,
-h3::before,
-h4::before,
-h5::before,
-h6::before {
-    content: "§ ";
-    margin-right: 0.4em;
-    font-size: 70%;
-    vertical-align: top;
+.org-src-container>pre.src-conf:before {
+    content: "Conf"
 }
 
-/* Other elements */
-blockquote {
-    font-style: italic;
+.org-src-container>pre.src-elisp:before {
+    content: "Emacs Lisp"
 }
 
-:not(pre) > code {
-    color: #d33682;
-    border: initial;
-    padding: initial;
+.org-src-container>pre.src-toml:before {
+    content: "TOML"
 }
 
-.csl-entry {
-    margin: 1em auto;
-}
+#+HTML_HEAD_EXTRA: <script defer src="hide-toc.js"></script>
 
-#table-of-contents {
-    font-family: Lora, serif;
-}
-
-summary {
-    cursor: pointer;
-}
-
-@media screen and (min-width: 950px) {
-    body {
-        width: 950px;
-    }
-}
+#+HTML_HEAD_EXTRA: <style>body {font-family: Lora, serif;}</style>
