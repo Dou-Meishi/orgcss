@@ -5,4 +5,4 @@ on top of [Gong's Org CSS](https://gongzhitaao.org/orgcss/).
 
 See documentation [here](https://dou-meishi.github.io/orgcss/doc-and-source.html).
 
-See a demo [here](https://dou-meishi.github.io/orgcss/example/Demo/demo.html).
+See a demo [here](https://dou-meishi.github.io/orgcss/examples/Demo/demo.html).
