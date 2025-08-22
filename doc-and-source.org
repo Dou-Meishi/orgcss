@@ -3,8 +3,10 @@
 #+DATE: [2025-08-20]
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="dou-new-org.css"/>
-#+HTML_HEAD_EXTRA: <script defer src="hide-toc.js"></script>
+#+HTML_LINK_UP:
+#+HTML_LINK_HOME:
 #+PROPERTY: header-args :tangle ./dou-new-org.css
+#+OPTIONS: toc:nil
 
 This is my custom stylesheet for Org-exported HTML pages. It is built
 on top of [[https://gongzhitaao.org/orgcss/][Gong's Org CSS]].
@@ -18,6 +20,8 @@ which then motivates this project.
 This document is written in Emacs Org mode, and invoking the command
 =org-babel-tangle= will extract all CSS snippets into a single file
 =./dou-new-org.css=.
+
+#+TOC: headlines 4
 
 ** General Considerations
 
@@ -125,7 +129,7 @@ Gray out.
 
 **** Reference list
 
-Increase the lineskip to match normal text.
+Increase the lineskip to match normal text[fn:3].
 
 #+BEGIN_SRC css
 .csl-entry {
@@ -232,12 +236,38 @@ Consistent with the appearance in my Org mode.
 Add smooth transitions for collapsing and expanding of =<details>= and
 =<summary>= elements.
 
-** TODO Appendix: Hide the Table of Contents
+** CANCELLED Appendix: Copy Button for Code Blocks
+CLOSED: [2025-08-22 Fri 08:52]
+
+Add a button for copying the content of code blocks.
+
+** DONE Appendix: Display Language Name in Source Blocks
+CLOSED: [2025-08-22 Fri 08:49]
+
+Extend Gong's CSS to support more lanauges.
+
+#+BEGIN_SRC css
+.org-src-container>pre.src-conf:before {
+    content: "Conf"
+}
+
+.org-src-container>pre.src-elisp:before {
+    content: "Emacs Lisp"
+}
+
+.org-src-container>pre.src-toml:before {
+    content: "TOML"
+}
+#+END_SRC
+
+** DONE Appendix: Hide the Table of Contents
+CLOSED: [2025-08-22 Fri 08:52]
 
 Use JS to hide the default TOC in the title. In particular, wrap the
 whole TOC (if persent) within the title via a detail/summary pair.
 
 #+BEGIN_SRC js :tangle no
+// Hide TOC
 document.addEventListener('DOMContentLoaded', function () {
   // Get the title and TOC elements
   const title = document.querySelector('h1.title');
@@ -257,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function () {
     details.appendChild(summary);
     details.appendChild(toc);
 
-    // Insert details at the position where title was (before the first one)
+    // Insert details as the first child of the original parent of title.
     titleParent.insertBefore(details, titleParent.firstChild);
 
     // title and toc have now been moved into 'details', no need to remove originals
@@ -265,7 +295,51 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 #+END_SRC
 
+*Usage.* Save the above snippet as =./hide-toc.js=, and insert it in the
+exported HTML head via adding a line
+
+#+BEGIN_SRC text
+#+HTML_HEAD_EXTRA: <script defer src="hide-toc.js"></script>
+#+END_SRC
+
+** DONE Appendix: Related Emacs Settings
+CLOSED: [2025-08-22 Fri 08:41]
+
+Below is my configuring snippet related to org exporting for this project.
+
+#+BEGIN_SRC elisp :tangle no
+(use-package org
+  ;; org export general options
+  :config
+  (setq org-export-default-language "en")
+  (setq org-export-with-section-numbers nil)
+  (setq org-export-with-sub-superscripts '{})
+  (setq org-export-with-toc 4)
+)
+
+(use-package org
+  ;; org HTML export options
+  :config
+  (setq org-html-checkbox-type 'unicode)
+  (setq org-html-doctype "html5")
+  (setq org-html-footnote-format "<sup>[%s]</sup>")
+  (setq org-html-head-include-default-style nil)
+  (setq org-html-htmlize-output-type 'inline-css)
+  (setq org-html-metadata-timestamp-format "%b %d, %a, %Y")
+  (setq org-html-postamble "\
+<p class=\"author\">Author: %a</p>
+<p class=\"date\">Exported: %T</p>")
+  (setq org-html-preamble "\
+<p class=\"date\">Created: %d</p>
+<p class=\"date\">Modified: %C</p>")
+  (setq org-html-self-link-headlines t)
+  (setq org-html5-fancy t)
+)
+#+END_SRC
+
 ** Footnotes
+
+[fn:3] See [[https://dou-meishi.github.io/org-blog/2025-05-11-LearnOrgCite/notes.html][my post]] for how to write citations in Org mode.
 
 [fn:1] Set the export option =org-html-htmlize-output-type= to
 /inline-css/ to ensure that Emacs exports code blocks with the same
@@ -274,5 +348,8 @@ color scheme as the current buffer; see [[https://github.com/gongzhitaao/orgcss?
 [fn:2] For specific pages (e.g., math-related posts), I may use Lora
 for the main text to enhance the professional feelings. This can be
 done by setting export options on a per-file basis by adding a line
-=#+HTML_HEAD_EXTRA: <style>body {font-family: Lora, serif;}</style>=.
+
+#+BEGIN_SRC text
+#+HTML_HEAD_EXTRA: <style>body {font-family: Lora, serif;}</style>
+#+END_SRC
 

@@ -1,3 +1,4 @@
+// Hide TOC
 document.addEventListener('DOMContentLoaded', function () {
   // Get the title and TOC elements
   const title = document.querySelector('h1.title');

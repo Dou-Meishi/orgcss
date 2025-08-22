@@ -6,7 +6,7 @@ body {
     font-family: Fira Sans, sans-serif;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 960px) {
     body {
         width: 950px;
     }
@@ -102,3 +102,19 @@ summary {
 .done.DONE{
     color: #859900;  /* solarized green */
 }
+
+.org-src-container>pre.src-conf:before {
+    content: "Conf"
+}
+
+.org-src-container>pre.src-elisp:before {
+    content: "Emacs Lisp"
+}
+
+.org-src-container>pre.src-toml:before {
+    content: "TOML"
+}
+
+#+HTML_HEAD_EXTRA: <script defer src="hide-toc.js"></script>
+
+#+HTML_HEAD_EXTRA: <style>body {font-family: Lora, serif;}</style>
