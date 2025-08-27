@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function () {
 *Usage.* Save the above snippet as =./hide-toc.js=, and insert it in the
 exported HTML head via adding a line
 
-#+BEGIN_SRC text
+#+BEGIN_SRC text :tangle no
 #+HTML_HEAD_EXTRA: <script defer src="hide-toc.js"></script>
 #+END_SRC
 
@@ -349,7 +349,7 @@ color scheme as the current buffer; see [[https://github.com/gongzhitaao/orgcss?
 for the main text to enhance the professional feelings. This can be
 done by setting export options on a per-file basis by adding a line
 
-#+BEGIN_SRC text
+#+BEGIN_SRC text :tangle no
 #+HTML_HEAD_EXTRA: <style>body {font-family: Lora, serif;}</style>
 #+END_SRC
 

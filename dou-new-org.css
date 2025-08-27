@@ -114,7 +114,3 @@ summary {
 .org-src-container>pre.src-toml:before {
     content: "TOML"
 }
-
-#+HTML_HEAD_EXTRA: <script defer src="hide-toc.js"></script>
-
-#+HTML_HEAD_EXTRA: <style>body {font-family: Lora, serif;}</style>
