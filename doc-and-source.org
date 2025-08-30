@@ -176,16 +176,19 @@ Set font to match headlines.
 
 **** Title and subtitle
 
-Use small caps; align left; smaller size for the subtitle.
+Use small caps; align left; normal weight; smaller size for the subtitle;
+medium weight for the subtitle;
 
 #+BEGIN_SRC css
 .title {
     font-variant-caps: small-caps;
     text-align: left;
+    font-weight: 400;
 }
 
 .subtitle {
     font-size: 60%;
+    font-weight: 500;
 }
 #+END_SRC
 

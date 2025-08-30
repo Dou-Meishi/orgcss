@@ -61,10 +61,12 @@ summary {
 .title {
     font-variant-caps: small-caps;
     text-align: left;
+    font-weight: 400;
 }
 
 .subtitle {
     font-size: 60%;
+    font-weight: 500;
 }
 
 .todo {
