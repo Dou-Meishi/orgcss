@@ -3,7 +3,7 @@ blockquote {
 }
 
 body {
-    font-family: Fira Sans, sans-serif;
+    font-family: Fira Sans, Noto Sans CJK SC, sans-serif;
 }
 
 @media screen and (min-width: 960px) {
@@ -19,11 +19,11 @@ body {
 }
 
 code, kbd, pre, samp {
-    font-family: Fira Code, monospace;
+    font-family: Fira Code, Noto Sans Mono CJK SC, monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Lora, serif;
+    font-family: Lora, Noto Serif, Noto Serif CJK SC, serif;
     color: #527d9a;
 }
 
@@ -55,7 +55,7 @@ summary {
 }
 
 #table-of-contents {
-    font-family: Lora, serif;
+    font-family: Lora, Noto Serif, Noto Serif CJK SC, serif;
 }
 
 .title {
